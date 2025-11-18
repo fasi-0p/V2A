@@ -1,0 +1,70 @@
+0.0 --> 4.7  If you are interested in cryptocurrencies, you've probably heard of something called
+4.7 --> 5.7  a fork.
+5.7 --> 10.7  We've seen a few hard forks already, but what are they exactly?
+10.7 --> 15.9  Before we can take a look at what a hard fork is, you must understand how a blockchain works.
+15.9 --> 20.1  You can watch this video here for a simple explanation.
+20.1 --> 25.9  In this video I will use Bitcoin as the primary example, but all these concepts apply to other
+25.9 --> 28.2  cryptocurrencies as well.
+28.2 --> 33.3  As you probably know, Bitcoin is a digital currency, and that means that it is implemented
+33.3 --> 35.1  with a lot of software.
+35.1 --> 40.3  The software is called the Bitcoin protocol, and it establishes the rules to which everyone
+40.3 --> 43.4  should agree if they want to use Bitcoin.
+43.4 --> 49.4  This includes how large a block is, what rewards miners get, how fees are calculated, and so
+49.4 --> 51.4  on and so on.
+51.4 --> 56.2  But just like any other software project, development on Bitcoin will never be fully
+56.2 --> 57.5  finished.
+57.5 --> 60.1  There is always room for improvement.
+60.1 --> 67.0  The Bitcoin developers regularly push out updates to fix issues or to increase performance.
+67.0 --> 71.9  Some of these improvements are small, but others fundamentally change the way Bitcoin
+71.9 --> 72.9  works.
+72.9 --> 77.9  So sometimes it happens that a group of developers disagrees with the direction that Bitcoin
+77.9 --> 79.5  is taking.
+79.5 --> 84.8  The miners can also disagree because updates to the Bitcoin protocol could reduce their
+84.8 --> 87.0  profits.
+87.0 --> 92.0  If a group of people are so dissatisfied, they can choose to go their own way and create
+92.0 --> 95.9  their own version of the protocol and fork the blockchain.
+95.9 --> 98.2  So what happens if they do this?
+98.2 --> 103.8  Well Bitcoin consists out of two big pieces, the Bitcoin protocol and the blockchain which
+103.8 --> 107.8  stores all the transactions that have ever happened.
+107.8 --> 112.9  If they decide to create their own fork, they start by copying the Bitcoin protocol code
+112.9 --> 115.5  and start making their changes.
+115.5 --> 119.7  They can do this because Bitcoin is completely open source.
+119.7 --> 123.8  After they have implemented their desired changes, they define a point in time at which
+123.8 --> 126.6  their fork will become active.
+126.6 --> 129.5  This is done by specifying a block number.
+129.5 --> 135.7  For example, you can say that your block will go live when block number 480,000 is published
+135.7 --> 137.6  through the blockchain.
+137.6 --> 141.9  When that block number is reached, the community is split in two.
+141.9 --> 146.7  Some people decide to support the original protocol while others want to support the
+146.7 --> 148.5  fork.
+148.5 --> 153.2  Each group then starts adding new blocks to the fork that they want to support.
+153.2 --> 158.3  At this point, both blockchains are incompatible with each other.
+158.3 --> 163.6  Because a fork is based on the original blockchain, all transactions that happened on the original
+163.6 --> 167.1  blockchain also happened on the fork.
+167.1 --> 171.9  And that means that if you had a certain amount of coins before the fork, you will also get
+172.0 --> 175.2  the same amount of the new currency.
+175.2 --> 179.8  Some people call this free money, but it all depends on whether or not the fork can actually
+179.8 --> 182.3  attract value.
+182.3 --> 185.3  We've already seen quite a few hard forks.
+185.3 --> 192.3  For example, it happened to Bitcoin on August 1, 2017, when Bitcoin Cash was born.
+192.3 --> 198.1  In this case, the developers couldn't agree on what the size for a block should be.
+198.1 --> 204.8  Some wanted the block size to go from 1MB to 2MB, but others wanted to increase it even
+204.8 --> 206.3  further.
+206.3 --> 211.2  When matters couldn't be settled, both groups decided to go their own way.
+211.2 --> 213.6  Bitcoin has had a few hard forks already.
+213.6 --> 216.7  Some forks becoming more successful than others.
+216.7 --> 218.4  But it's not the only one.
+218.4 --> 224.6  Also, Ethereum has had a hard fork when it's split into Ethereum and Ethereum Classic.
+224.7 --> 227.4  So that is essentially what a hard fork is.
+227.4 --> 230.3  But there is also something called a soft fork.
+230.3 --> 231.9  So what's the difference?
+231.9 --> 238.4  A hard fork occurs when someone forks Bitcoin and makes it incompatible with the original.
+238.4 --> 244.0  If you however fork Bitcoin and make your changes compatible, then we call it a soft fork.
+244.0 --> 246.1  A subtle difference.
+246.1 --> 250.7  So now you know what a hard fork is and why they happen.
+250.7 --> 255.5  Because cryptocurrencies are becoming more and more popular, it's safe to say that disagreements
+255.5 --> 260.2  will pop up more often and more forks will be created.
+260.2 --> 261.9  So that was it for this video.
+261.9 --> 266.3  I hope you liked it and if you did, hit the thumbs up button and get subscribed to my
+266.3 --> 267.3  channel.
+267.3 --> 270.5  Thank you very much for watching and I'll see you in the next video.

@@ -1,0 +1,76 @@
+0.0 --> 3.9  When you are connected to the internet and you're listening to music, playing online games,
+3.9 --> 8.6  or browsing the web, there are many standard protocols running behind the scenes to make
+8.6 --> 13.4  sure that your computer can indeed communicate with these services. There is, for instance,
+13.4 --> 19.6  the internet protocol, or IP, that is responsible for delivering messages from one computer to another.
+20.2 --> 24.5  These messages are also called packets, and just like postal packages,
+24.5 --> 30.1  they always have a sender, a receiver, and a payload. But instead of using street names and
+30.1 --> 36.4  postal codes, the internet uses IP addresses, and they look something like this. Without them,
+36.4 --> 41.4  computers can't communicate with each other, which means no computer networks and no internet.
+42.0 --> 47.9  So if you open up YouTube, your computer actually sends a message to YouTube's IP address, asking
+47.9 --> 53.6  for the data that it needs to show the web page. But wait a minute, you say, when I want to open
+53.6 --> 60.1  YouTube, I just enter youtube.com into my browser. I don't need the IP address. So how does my
+60.1 --> 65.0  computer know the address then? Well, I'm glad you asked. This issue was solved in the early
+65.0 --> 71.0  days of the internet when the Stanford Research Institute created a text file called host.txt.
+71.8 --> 78.0  This file translated names like youtube.com into IP addresses that computers need to communicate.
+78.6 --> 83.4  The file was then installed on all computers connected to the ARPANET so they could translate
+83.4 --> 89.4  a domain name into an IP address. However, as the internet kept growing, so did the demand for
+89.4 --> 94.6  these domain names. The small team that was managing the host file was quickly overwhelmed,
+94.6 --> 101.4  and so in 1983, a specification was published to automate this task and DNS or the domain name
+101.4 --> 107.7  system was born. DNS is basically a big phone book for the internet, matching domain names like
+107.7 --> 114.2  google.com to an IP address. This phone book is hosted on DNS servers that are distributed across
+114.2 --> 121.4  the world. So let's take a look at what happens when you want to go to www.google.com. For starters,
+121.4 --> 126.7  your operating system splits the domain name into multiple parts, or also called labels,
+126.7 --> 134.0  that are separated by dots. So in this case, we have three labels, www, google, and com.
+134.0 --> 139.3  They create a hierarchy that has to be read from right to left. The rightmost label is called the
+139.3 --> 146.5  top level domain, in this case com. We can then say that google is a subdomain of com, and www is
+146.5 --> 153.0  a subdomain of google. To resolve the IP address of google.com, your computer reaches out to a root
+153.0 --> 160.5  name server and asks the question, what's the IP address for www.google.com. Root name servers
+160.5 --> 166.2  never give a direct answer, instead they refer you to a server that is more likely to be able to
+166.2 --> 172.5  help you. In this case, that'll be the name server in charge of the dot com top level domain.
+172.5 --> 177.9  Your computer now asks the same question to the com name server, and this one is likely to refer
+177.9 --> 183.3  you to yet another name server. In this case, it will redirect you to a name server that google
+183.3 --> 190.4  itself hosts. This one is very likely to be able to tell you what IP address is connected to www.google.com.
+191.4 --> 196.1  This mechanism along with the hierarchy of domain names makes DNS very scalable,
+196.1 --> 202.7  because after all, each name server only stores a small set of IP addresses. The com name servers
+202.7 --> 207.3  don't know anything about websites that are hosted on the orc domain for instance.
+207.3 --> 212.8  The phonebook analogy holds up here as well. My phone number is listed in the Belgian phonebook,
+212.8 --> 218.3  but not in the US one. But there are however two drawbacks to this. First of all, it puts a lot
+218.3 --> 223.1  of pressure on the root name servers, as they will be contacted every time someone wants to connect
+223.1 --> 228.7  to a website. And secondly, devices need to be able to follow a referral, which it will get from
+228.7 --> 234.9  root name servers and perhaps other name servers as well. Both of these problems are solved by
+234.9 --> 241.1  recursive resolvers. These are special DNS servers that will take care of the entire resolving process.
+241.8 --> 248.2  Instead of having your devices contact multiple name servers, they just contact a recursive resolver
+248.2 --> 253.9  which is it all for them. They are often hosted by internet service providers and more recently
+253.9 --> 259.9  are also hosted by companies like Google and Cloudflare. Most home routers pull double duty
+259.9 --> 266.6  and serve as a recursive resolver as well. So how do our devices know what resolver to use?
+266.6 --> 271.2  Well by default they will use the one that is configured by the network administrator.
+271.2 --> 275.9  In a home network that is your ISP and they'll likely configure their own resolvers,
+275.9 --> 281.3  but you can always choose another one. Some recursive resolvers are faster than others.
+281.3 --> 286.7  So switching to a resolver hosted by Google or Cloudflare could give you a slight speed bump.
+287.4 --> 293.8  To speed up DNS even further, recursive resolvers also have a cache, which stores the IP address of
+293.8 --> 299.4  the main names that are most frequently being requested. When you go to google.com on your phone,
+299.4 --> 305.0  the recursive resolver on your router will look up Google's IP address. And once it figures that
+305.0 --> 310.9  out, stores it in its cache for future reference. If another device on your network wants to resolve
+310.9 --> 317.0  google.com as well, your router can instantly give an answer without having to go through all the hoops
+317.0 --> 323.1  of contacting multiple name servers. Caching can greatly increase the speed of DNS queries,
+323.1 --> 328.3  but it can also be poisonous. Changes to the IP addresses of domain names aren't immediately
+328.3 --> 333.3  reflected across the world because the old address is still stored in the cache of many
+333.3 --> 339.5  recursive resolvers. To combat this issue, domain owners can define how long an IP address may be
+339.5 --> 346.6  cached. This is called the TTL or Time to Live and is expressed in seconds. If a cache record is
+346.6 --> 351.9  older than the given TTL, the resolver must delete it, and after which it has to use the
+351.9 --> 358.1  traditional resolving process again. But some recursive resolvers don't adhere to this TTL
+358.1 --> 362.9  and keep records in their cache for a longer period of time to reduce the load.
+362.9 --> 367.5  This practice is problematic for website owners that want to change the IP address
+367.5 --> 372.9  linked to their domain names. But that's a minor hiccup. It's clear that DNS is a major
+372.9 --> 378.8  cornerstone of the way we use the internet today. It also has some cool alternative use cases. You
+378.8 --> 384.6  can for instance use a custom DNS server to block advertisements or to protect yourself from domain
+384.6 --> 390.1  names that spread malware. Sounds complicated, but you can easily do it by installing Pyhole on
+390.1 --> 396.6  a Raspberry Pi and plugging it into your home network. Pyhole acts as a recursive DNS resolver
+396.6 --> 402.6  for all your devices. And when a device wants to resolve ads.google.com for instance, the Pyhole
+402.6 --> 408.5  will return a local IP address and essentially stop the advertisement from loading. Genius.
+409.4 --> 415.4  So that's a quick overview of the domain name system. It's a very open system and undeniably
+415.4 --> 420.5  a protocol that makes the web accessible and easy to use for everyone. Replacing hard to
+420.5 --> 426.2  remember IP addresses with easy to remember domain names. That was it for this video.
+426.2 --> 430.6  Let me know what you thought about it in the comments below. If you liked it, give it a thumbs
+430.6 --> 438.3  up and consider getting subscribed to my channel. Thank you so much for watching. Until next time.
+438.5 --> 442.3  Bye.

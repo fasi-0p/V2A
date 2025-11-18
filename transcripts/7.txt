@@ -1,0 +1,77 @@
+0.0 --> 5.6  NoSQL databases have become very popular. Big companies rely on them to store hundreds of
+5.6 --> 12.2  petabytes of data and run millions of queries per second. But what is a NoSQL database? How does it
+12.2 --> 17.7  work and why does it scale so much better than traditional relational databases? Let's start
+17.7 --> 23.8  by quickly explaining the problem with relational databases like MySQL, MariaDB, SQL Server and
+23.8 --> 29.8  alike. These are built to store relational data as efficiently as possible. You can have a table
+29.8 --> 35.7  for customers orders and products, linking them together logically. Customers place orders and
+35.7 --> 41.9  orders contain products. This tight organization is great for managing your data, but it comes at
+41.9 --> 48.1  a cost. Relational databases have a hard time scaling. They have to maintain these relationships,
+48.1 --> 53.1  and that's an intensive process requiring a lot of memory and compute power.
+53.1 --> 58.2  So for a while, you can keep upgrading your database server, but at some point it won't be
+58.2 --> 64.3  able to handle the load. In technical terms, we say that relational databases can scale vertically
+64.3 --> 70.6  but not horizontally, whereas NoSQL databases can scale both vertically and horizontally.
+70.6 --> 75.8  You can compare this to a building. Vertical scaling means adding more floors to an existing
+75.8 --> 81.8  building. Why horizontal scaling means adding more buildings. You intuitively understand that
+81.8 --> 87.4  vertical scaling is only possible to a certain extent, while horizontal scaling is much more
+87.4 --> 94.5  powerful. Now why do NoSQL databases scale so well? First of all, they do away with these costly
+94.5 --> 101.7  relationships. In NoSQL, every item in the database stands on its own. This simple modification means
+101.7 --> 107.4  that they are essentially key value stores. Each item in the database only has two fields,
+107.4 --> 112.8  a unique key and a value. For instance, when you want to store product information,
+112.8 --> 118.7  you can use the product's barcode as the key and the product name as the value. This seems
+118.7 --> 123.3  restrictive, but the value can be something like adjacent document containing more data,
+123.3 --> 130.0  like the price and description. This simpler design is why NoSQL databases scale better.
+130.0 --> 134.9  If a single database server is not enough to store all your data or handle all the queries,
+134.9 --> 140.6  you can split the workload across two or more servers. Each server will then be responsible for
+140.6 --> 147.4  only a part of your database. To give an example, Apple runs a NoSQL database that consists out of
+147.4 --> 154.2  75,000 servers. In NoSQL terms, these parts of your database are called partitions,
+154.2 --> 159.8  and it brings up a question. If your database is split across potentially thousands of partitions,
+159.8 --> 165.2  how do you know where an item is stored? That's where the primary key comes in.
+165.2 --> 170.9  Remember, NoSQL databases are key value stores, and the key determines on what partition an
+170.9 --> 177.4  item will be stored. Behind the scenes, NoSQL databases use a hash function to convert each
+177.4 --> 183.8  item's primary key into a number that falls into a fixed range, say between 0 and 100.
+184.5 --> 189.8  This hash value and the range is then used to determine where to store an item.
+189.8 --> 195.3  If your database is small enough or doesn't get many requests, you can put everything on a single
+195.3 --> 201.7  server. This one will then be responsible for the entire range. If that server becomes overloaded,
+201.7 --> 205.7  you can add a secondary server, which means that the range will be split in half.
+206.3 --> 212.8  Server 1 will be responsible for all items with a hash between 0 and 50, while server 2 will store
+212.8 --> 219.0  everything between 50 and 100. Theoretically, you've now doubled your database capacity,
+219.0 --> 222.7  both in terms of storage and in the number of queries you can execute.
+223.6 --> 229.0  This range is also called a key space. It's a simple system that solves two problems,
+229.0 --> 234.6  where to store new items and where to find existing ones. All you have to do is calculate
+234.6 --> 240.0  the hash of an item's key and keep track of which server is responsible for which part of the key
+240.0 --> 246.9  space. In this example, the range of 0 to 100 is a bit small. It would only allow you to split
+246.9 --> 254.2  up your database into 100 pieces at most. So, real NoSQL databases have much bigger key spaces,
+254.2 --> 257.2  allowing them to scale almost without any restrictions.
+258.6 --> 264.6  Besides great scalability, NoSQL is schemaless, which means that items in the database don't need
+264.6 --> 270.5  to have the same structure. Each one can be completely different. In a relational database,
+270.5 --> 274.8  you have to define your table structure, and then each item must conform to it.
+275.4 --> 279.7  Changing this structure isn't straightforward and could even lead to data loss.
+280.4 --> 285.4  Not having a schema can be a big advantage if your application and data structure is constantly
+285.4 --> 291.2  evolving. Now, at this point, it's clear that NoSQL databases have certain advantages over
+291.2 --> 297.2  relational ones, but that's not to say that relational databases are obsolete, far from it.
+297.2 --> 303.2  NoSQL is more limited in the way you can retrieve your data, only allowing you to retrieve items by
+303.2 --> 309.7  their primary key. Finding orders by ID is no problem, but finding all orders above a certain
+309.7 --> 315.4  amount would be very inefficient. Relational databases, on the other hand, have no trouble with this.
+316.1 --> 321.3  Now, there are workarounds for this issue, but only if you know how you're going to access your
+321.3 --> 327.4  data, and that might not always be the case. Another downside is that NoSQL databases are
+327.4 --> 332.6  eventually consistent. When you write a new item to the database and try to read it back straight
+332.6 --> 339.6  away, it might not be returned. As I've explained, NoSQL splits your database into partitions,
+339.6 --> 345.7  but each partition is mirrored across multiple servers. That way, a server can go down without
+345.7 --> 350.6  much impact. When you write a new item to the database, one of these mirrors will store the
+350.6 --> 356.2  new item and then copy it to the others in the background. This process might take a little
+356.2 --> 361.5  bit of time, so when you read that item back, the NoSQL database might try to read it from a
+361.5 --> 367.5  mirror that doesn't have it yet. Now, this is not a big issue in practice because data is replicated
+367.5 --> 373.5  in just a few milliseconds, and if you want consistency, most NoSQL databases do have that
+373.5 --> 380.2  option. So, in summary, both NoSQL and relational databases will be around for the foreseeable
+380.2 --> 386.4  future, each with their own strengths and weaknesses. So, now you know how NoSQL works.
+386.4 --> 392.0  Let's look at a few examples. Cloud providers heavily promote NoSQL because they can scale it
+392.0 --> 400.0  more easily. AWS has DynamoDB, Google Cloud has Bigtable, and Azure has CosmosDB. And to give you
+400.0 --> 406.8  another example of their scalability, during Amazon Prime Day in 2019, Amazon's NoSQL database
+406.8 --> 413.4  peaked at 45 million requests per second. That's mind-boggling. But you can also run
+413.4 --> 420.6  NoSQL databases yourself, with software like Cassandra, Silla, CouchDB, MongoDB, and much more.
+421.4 --> 427.0  Now, before ending this video, let's quickly talk about the name NoSQL. It's a bit confusing,
+427.0 --> 433.7  as it can have two meanings. First up, NoSQL can mean not only SQL, pointing to the fact that
+433.7 --> 439.8  some NoSQL databases partially understand the SQL query language on top of their own query
+439.8 --> 446.8  capabilities. And secondly, it's often called NoSQL in the sense of non-relational, because it
+446.8 --> 452.3  can't easily store relational data. So that was it for this video. Please subscribe if you
+452.3 --> 457.4  learned something from it, and I hope to see you in the next one.

@@ -1,0 +1,77 @@
+0.0 --> 4.2  You might have found out that there is a website that checks if your online accounts have been
+4.2 --> 10.2  compromised by hackers. So you enter in your email address and oh no, you have been pwned.
+10.2 --> 13.7  Hackers now know the passwords that you used on all these services.
+14.2 --> 20.3  But do they really know your password? Well as it turns out, that might not actually be the case.
+20.3 --> 25.7  And to understand why, let's take a look at what options companies have to protect your passwords
+25.7 --> 31.4  and safely store them so that even when hackers get access to their systems, your passwords stay
+31.4 --> 37.2  safe. There are three ways a company can store your password. They can store it in plain text,
+37.2 --> 43.3  use encryption on it, or use what's called a hash function. Let's go quickly over each one of these
+43.3 --> 48.9  and let's start with the most basic one plain text. This is obviously the most dangerous way of
+48.9 --> 54.6  storing passwords. If hackers breach the company's database, they get to see all the passwords of the
+54.6 --> 60.2  users. And since a lot of people have the bad habit of using the same password for multiple
+60.2 --> 65.1  accounts, it's likely that one compromised password could lead to more compromised accounts.
+66.0 --> 70.8  Now you might think that companies aren't silly and that none of them store our passwords in plain
+70.8 --> 76.6  text. However, you would be very wrong in thinking that past breaches have shown us that top companies
+76.6 --> 82.7  with millions of users weren't adequately protecting passwords. A possible alternative to
+82.7 --> 88.6  plain text storage is encryption. You take the password of the user and before you store them,
+88.6 --> 93.5  encrypt them with an encryption key. This would prevent hackers from obtaining the real password
+93.5 --> 99.7  of users, but it's still quite risky. Underneath the encryption layer is still a plain text password.
+99.7 --> 104.4  And so if an attacker manages to steal the encryption key as well, he can unlock all the
+104.4 --> 110.1  passwords. The problem with encryption is that it is designed to work in two ways. You can encrypt
+110.1 --> 115.1  the user's password to keep it safe, but you can also decrypt it to reveal the password again.
+115.8 --> 120.9  Encryption is very practical when you want to share data in a secure way, but not great if you
+120.9 --> 126.2  want to prevent hackers from breaching your password. And that brings us to the third technique of
+126.2 --> 132.2  storing passwords. And that's by using a hash function. How does that work? Well, a hash function
+132.2 --> 137.5  takes an input that could be a piece of text like your password, or it could be a file. And it turns
+137.5 --> 143.2  that into a string of text that always has the same length. There are many different hash functions
+143.2 --> 149.2  available. But this is what the shot three hash of Hello World looks like. Hash functions are very
+149.2 --> 155.0  different from encryption, because they only work in one way. You can calculate the hash of a password,
+155.0 --> 160.5  but you cannot take a hash and turn it back into the original data. And that is an interesting
+160.5 --> 166.1  property to have. By using hashes, companies can verify that you're logging in with the correct
+166.1 --> 172.5  password without having to store your actual password. However, they aren't perfect either.
+172.5 --> 177.4  Most hashing algorithms are optimized for speed. The more hashes per second they can calculate,
+177.4 --> 183.8  the better. And that makes them vulnerable against brute force attacks. By simply calculating every
+183.8 --> 190.0  hash of every possible password, an attacker can reverse the hash function. A modern GPU can do
+190.0 --> 196.5  this with the speed of 292 million hashes per second. So it's only a matter of time before a
+196.5 --> 202.2  hashed password is cracked using this technique. And if that's not fast enough, hackers can also
+202.2 --> 207.9  use rainbow tables to further accelerate the process. These are lists of pre computed hashes
+207.9 --> 214.1  that can be used to quickly find weak and commonly used passwords. The speed of a hash function is
+214.1 --> 219.6  a positive thing in certain areas. However, when it comes to storing passwords, you don't want
+219.7 --> 226.1  this property. And then there is a second problem. And that happens when users share the same password.
+226.1 --> 232.3  If both Alice and Bob have the password query, the hashes of their passwords will be identical.
+232.3 --> 238.2  So when a hacker cracks the hash of this password, he also knows the other. Now you might think that's
+238.2 --> 243.2  not a big deal because it's very unlikely that different people will use the same password. Well,
+243.2 --> 248.8  think again, the password query has been found more than 3 million times in data breaches.
+248.9 --> 254.5  To make matters even worse, here's the top 10 most used passwords in 2017,
+254.5 --> 260.6  not the strongest of passwords. To defend against these types of attacks, we can add what's called
+260.6 --> 267.1  a salt to the password before we hash it. The salt is just some random data, but it ensures that the
+267.1 --> 273.7  hash of your password will always be unique, even if others use the same password. So if Bob and Alice
+273.7 --> 279.2  both use the password query, their hashes will be completely different. So if an attacker cracks
+279.2 --> 284.7  Bob's password, he can't link that password to Alice, and he has to start his cracking attempts
+284.7 --> 291.0  all over again. This technique prevents hackers from cracking a bunch of passwords in one go.
+291.0 --> 296.8  It makes a brute force attack slower, but still very much possible. So to solve this,
+296.8 --> 301.4  we have to take a look at another technique, which is using a special hash function,
+301.4 --> 307.6  which is deliberately being slowed down. Example of these are B crypt, S crypt or Argon 2,
+307.6 --> 313.0  and they completely neutralize brute force attacks. These algorithms take a password as input,
+313.0 --> 319.0  along with a salt and a cost. This last one is very interesting. The cost defines the number
+319.0 --> 324.6  of rounds the algorithm goes through, and this effectively slows it down. Now over time, our
+324.6 --> 330.2  computers become faster. And so brute force attacks against these algorithms becomes easier.
+330.2 --> 334.0  And that's because they can simply try more combinations in a shorter time span.
+334.6 --> 339.8  All we have to do to counter this is increase the cost parameter, so the algorithm remains
+339.8 --> 346.0  resistant against these types of attacks. Pretty genius. So those are the three options that a
+346.0 --> 351.7  company has to store and protect your passwords. But why settle for just one method if we can use
+351.7 --> 357.6  multiple? You can't be greedy enough when it comes to security. This multi layer protection is used
+357.6 --> 362.6  by Dropbox for instance. They take your password and start by running it through a simple hash
+362.6 --> 368.6  function without assault. This is their first line of defense. They then take the hash and run it
+368.6 --> 374.6  through the B crypt algorithm with a salt and a cost of 10. This prevents brute force attacks.
+374.6 --> 380.6  And finally, the resulting hash is encrypted with the advanced encryption standard or AES for short.
+381.3 --> 386.6  The encryption key for this is not stored in their database, but is instead kept separately.
+386.6 --> 392.2  So if an attacker breaches the Dropbox database, they will have to peel away each protective layer
+392.2 --> 397.8  around your password. And that will take a lot of time. In fact, the cracking attempt would likely
+397.8 --> 404.0  be more costly than what they get in return for compromising your account. So time for a conclusion
+404.0 --> 410.1  then. If your account has been compromised, it's best to change your password immediately. However,
+410.1 --> 415.0  depending on the security measures of the company that was compromised, it might be possible that
+415.1 --> 419.6  hackers haven't been able to retrieve your password. And that's thanks to the magic of
+419.6 --> 425.4  hash functions and cryptography in general. So now you know how companies can safely store your
+425.4 --> 430.6  passwords. That was it for this video. If you learned something from it, hit the thumbs up button
+430.6 --> 435.1  and consider getting subscribed. And as always, thank you very much for watching.

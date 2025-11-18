@@ -1,0 +1,76 @@
+0.0 --> 5.8  The web as we know it today has become incredibly important, but it's not without its problems.
+5.8 --> 12.7  In 2017, 28 years after the web was conceived, Sir Tim Berners-Lee wrote about three trends that
+12.7 --> 18.6  worried him. The first one was that we've lost control of our personal data. Many websites today
+18.6 --> 25.2  offer us a free service in exchange for our data, but we are not given a choice. Want to use Facebook?
+25.3 --> 30.0  Then you have to accept their terms and conditions, and that includes how it collects,
+30.0 --> 36.0  stores and uses your data. Others do the same thing, and that means that our data is scattered all
+36.0 --> 41.5  over the place. Some companies even sell your data to third parties behind your back.
+41.5 --> 47.5  We have no idea what happens with our data, and we have no control over it. To solve this problem,
+47.5 --> 53.0  the inventor of the web is working on Solit. It's not a new internet, but rather an extension of
+53.0 --> 58.5  the web as we know it today. You don't need anything special to use it. Any web browser will do.
+59.2 --> 65.2  The goal of Solit is to take all your data that is scattered around and centralize it in a single
+65.2 --> 71.4  place that's under your control. In Solit, this place is called a pod, and it can store any data.
+71.4 --> 77.3  Your contact information, files, photos, basically all the data that you produce and all the data
+77.3 --> 82.7  that others produce about you. Your pod gives you fine-grained control over your data. You
+82.7 --> 88.4  can choose what you share, with whom you share it, and you can revoke that permission at any time.
+88.4 --> 93.9  Here's a concrete example. Today, social networks store all your data on their servers,
+93.9 --> 100.0  but a social network built on Solit would keep your data in your pod. So whenever you post something,
+100.0 --> 105.6  it goes into your pod. Now, having all your data in one place has interesting side effects.
+105.6 --> 111.8  For starters, you could allow multiple applications to access the same data. For example, I use
+111.9 --> 116.7  Spotify to listen to music, and over the years, I have built an entire library there.
+117.3 --> 122.9  Spotify uses this data, along with my listening history, to understand my tastes in music and
+122.9 --> 129.8  help me discover new songs. And here's the problem. Spotify locks up that data. I can move to Apple
+129.8 --> 135.2  Music, but that would mean rebuilding my library and waiting for them to learn my tastes in music
+135.2 --> 141.0  before it can give me good recommendations. Tim Berners-Lee calls this data silos, where each
+141.0 --> 146.9  company builds its own data store and protects it from others, giving them a competitive advantage.
+147.4 --> 153.3  If these services ran on Solit, my music library and listening history would be stored in my pod.
+153.9 --> 158.8  Switching services is then easy. Just allow the new service to access the same data and
+158.8 --> 163.6  we're off to the races. This means that Solit can help level the playing field,
+163.6 --> 168.6  allowing small developers to compete with the big ones because they can have access to the same data.
+169.4 --> 175.0  On a technical level, this is done with vocabularies, a mechanism to describe data so that many
+175.0 --> 181.0  applications can understand it. It's almost like standardized file formats, like PDF, JPEG,
+181.0 --> 185.7  or MP3 files, which can be created and opened by many different applications.
+186.6 --> 191.4  Another side effect is that because your data is stored in one place, there's a single source
+191.4 --> 196.9  of truth for everything. If you move to a new place, you could change your address in your pod,
+196.9 --> 202.6  and everyone that has access to it will see it. No need to go running around changing your address
+202.6 --> 209.2  in countless services and apps. And finally, storing user data has become a liability because of
+209.2 --> 216.6  privacy loss like GDPR and CCPA, mishandled user data, and you could be fined. But storing data
+216.6 --> 222.6  in a user's pod means you automatically comply with these laws. A user can always see what data
+222.6 --> 228.7  is being stored, he can also delete it and revoke access. But enough about these side effects,
+228.7 --> 235.2  let's talk again about pods. How do you get one? Well, that is up to you. You can pick any provider
+235.2 --> 240.8  you'd like, maybe one with a good privacy policy or one that is hosted in your country, or maybe
+240.8 --> 246.4  you don't trust anyone and want to host your own. All of this is possible because the software is
+246.4 --> 252.9  open source and freely available. But a pod is only a place to store data, and that is not enough.
+252.9 --> 259.1  We also need a way to identify ourselves on the web. That's where WebID comes in. You can
+259.1 --> 264.6  compare it to login with Google or Facebook. Want to use a solid application? Just log in with your
+264.6 --> 270.6  WebID. The key difference is that your WebID doesn't share data with third parties. We could see a
+270.6 --> 276.2  future where governments give each citizen a WebID to access government-related services.
+276.2 --> 281.7  You can also have multiple WebIDs, one issued by your government and maybe a personal one.
+281.7 --> 286.9  The same is true for pods. Maybe you want a pod for personal data and one for work.
+286.9 --> 293.0  But solid isn't without challenges. Here are a few. Let's start with monetization. Many services
+293.0 --> 299.4  today are free because we pay for them with our data. Solid apps could replicate this. Ask the user
+299.4 --> 305.3  to give some of his data and show targeted ads based on those. Nothing prevents a solid app from
+305.3 --> 311.1  doing that. The difference is that the user can revoke that access at any time. Another solution
+311.1 --> 317.0  could be to charge a fee to use the app, or maybe offer both and let the users decide.
+317.0 --> 321.9  Pod providers can do something similar. They can charge based on the amount of storage you use,
+321.9 --> 327.5  or they could ask you to reveal some personal data in exchange for a free service. Or maybe they
+327.5 --> 334.1  could charge apps for using your data. I discussed this very topic with Ruben Verborg, a decentralized
+334.1 --> 339.8  Web Technology Professor. And he puts it this way. Future companies should derive their value
+339.8 --> 346.4  from the intelligence they provide. In other words, don't lock people in by taking their data hostage,
+346.4 --> 351.7  but lock them in by providing the best service out there. Another challenge for solid is that
+351.7 --> 357.3  once an app gets access to some data, it can copy it to another server. There is no technical
+357.3 --> 363.2  solution that can prevent this, but there are legal ones, like the GDPR, which make it risky to
+363.2 --> 369.3  copy personal data. Professor Verborg notes that our current lack of privacy is a consequence
+369.3 --> 375.3  of unsustainable business models. When the economics of personal data change, there'll be no reason
+375.3 --> 381.8  to collect personal data other than the data already available in the user's pod. At this point,
+381.8 --> 387.6  you might wonder, this is great. Can I use it today? Well, yes, it's still a work in progress,
+387.6 --> 394.1  but there are many apps available and also tools for developers to create new ones. And solid itself
+394.1 --> 400.6  is an open standard that anyone can contribute to. One last thing before I end the video. I mentioned
+400.6 --> 406.2  before that governments could provide pods and web IDs to citizens. In Belgium, the Flemish government
+406.2 --> 412.0  wants to do just that. It has kicked off an ambitious project to form a data utility company.
+412.0 --> 417.4  This company will centralize the citizens data and put them in control. This could kickstart the
+417.4 --> 422.4  adoption of solid, while at the same time boosting the efficiency of government agencies
+422.4 --> 427.1  because they no longer have to keep citizen data up to date across different systems.
+427.1 --> 433.1  Everything is just in one pod. I cannot wait to see the next generation of apps and services
+433.1 --> 438.6  built on solid. Consider subscribing if you found this video interesting. Thanks for watching and
+438.6 --> 441.0  till next time.

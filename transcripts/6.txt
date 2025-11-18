@@ -1,0 +1,52 @@
+0.0 --> 4.1  The DNS protocol is one of the most important protocols of the internet.
+4.1 --> 8.7  In a nutshell, it translates a website's domain name, like google.com,
+8.7 --> 12.0  into an IP address that your computer needs to reach the site.
+12.6 --> 17.4  Without it, we would need to memorize the IP addresses of each site we want to visit.
+17.4 --> 22.6  Not very convenient. You can learn more about DNS in one of my previous videos.
+22.6 --> 26.6  In this video, however, I want to zoom in on two privacy issues with DNS.
+27.2 --> 33.0  First, the protocol does not use encryption. Every time your computer needs to know an IP address,
+33.0 --> 37.5  it asks a DNS resolver. But these requests can be intercepted,
+37.5 --> 43.4  allowing others to see the sites you visit. This data could also be used to identify which
+43.4 --> 48.9  devices you have in your home. A smart thermostat, for instance, might communicate with a specific
+48.9 --> 54.6  domain name. An attacker that intercepts your DNS requests can see this and then use that knowledge
+54.6 --> 60.7  to exploit a weakness in the device, possibly exposing your entire network. This problem,
+60.7 --> 67.1  however, is easy to solve. Encrypt the connection between you and the DNS resolver with HTTPS.
+67.1 --> 71.4  That is the same technology that puts a green padlock in your browser.
+71.4 --> 75.7  Adding encryption means that nobody can intercept your DNS requests and keep track
+75.7 --> 82.9  of the sites you visit. This technique is called DNS over HTTPS, or DOH for short.
+82.9 --> 87.1  So problem one is fixed, but the second problem is more fundamental.
+87.1 --> 92.2  The DNS resolver you use will always be able to see who you are based on your IP address
+92.2 --> 97.8  and what sites you visit based on the DNS requests you make. These resolvers are usually
+97.8 --> 103.5  hosted by internet service providers, and some of these go as far as selling your browser history
+103.5 --> 109.7  to third parties. What's more, governments can use DNS to monitor citizens and even block
+109.7 --> 115.7  content on the internet. Not cool at all. To fix this problem, developers from Cloudflare,
+115.7 --> 122.9  Apple and Fastly work together to create Oblivious DNS, or ODNS for short. And the idea is rather
+122.9 --> 128.5  simple. Introduce an intermediary that can only see who you are, but not the sites you visit.
+129.0 --> 134.6  Here's how it works. On one end, you have the ODNS resolver, a server somewhere on the internet
+134.6 --> 141.0  that is capable of translating domain names into IP addresses. On the other end, you have your device
+141.0 --> 146.4  that wants to know the IP address of a given website, and in between is a proxy server that
+146.4 --> 153.0  protects your privacy. Now imagine you want to visit google.com. Your computer will create a DNS
+153.0 --> 158.6  request and encrypt it so that only the ODNS resolver can read it. Something you can do with
+158.6 --> 164.3  asymmetric encryption, which you can learn more about in this video here. Anyway, this encrypted
+164.4 --> 169.8  message is then sent to the proxy server, which can see your IP address, but because of the encryption,
+169.8 --> 177.4  can't see your DNS request. All it does is forward your request to an ODNS resolver. This one does
+177.4 --> 182.9  have the ability to decrypt your message and see what site you want to visit. However, it doesn't
+182.9 --> 188.5  know who actually sent the request, because the proxy server is in between. This is great for
+188.5 --> 194.2  privacy. The ODNS resolver then looks up the IP address and encrypts the response so that only
+194.2 --> 200.8  you can read it, sends it back to the proxy, which relays it back to you. And that's it. The proxy
+200.8 --> 205.8  server in the middle shields your IP address from resolvers that actually handle your request.
+206.5 --> 211.9  So in summary, the proxy server can see who you are, but not the sites you visit. And the ODNS
+211.9 --> 217.8  resolver can see the sites you visit, but not who you are. This means that your privacy is protected
+217.8 --> 223.8  as long as the proxy and the ODNS resolver are run by separate organizations that don't share
+223.8 --> 229.1  data with one another. If these two would work together, they could link your IP address from
+229.1 --> 237.1  the proxy server to the DNS request in the ODNS resolver. ODNS is without a doubt a great addition
+237.1 --> 243.2  to protect our online privacy. But does it have a bad influence on our browsing experience? Surely
+243.2 --> 249.3  these extra steps must slow everything down, right? Well, kind of. The team that developed
+249.3 --> 254.8  ODNS ran some benchmarks and they concluded that yes, there is a performance penalty,
+254.8 --> 259.3  but it's not significant. The encryption adds a delay of around two milliseconds,
+259.3 --> 264.5  and there's also some extra time needed because your request has to go through a proxy before
+264.5 --> 268.4  hitting the resolver. But it should not be noticeable while browsing the web.
+269.2 --> 274.0  So there you go. That is how ODNS could protect your online privacy. Right now,
+274.0 --> 279.0  it's not supported by any operating system, but Cloudflare has published an open source
+279.0 --> 284.9  implementation that can be tested today. Thanks for watching. Please subscribe if you found this
+284.9 --> 288.8  video interesting, and I'll see you in the next one.

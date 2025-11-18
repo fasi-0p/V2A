@@ -1,0 +1,87 @@
+0.0 --> 3.3  Blockchains are incredibly popular nowadays.
+3.3 --> 4.9  But what is a blockchain?
+4.9 --> 6.0  How do they work?
+6.0 --> 7.6  What problems do they solve?
+7.6 --> 9.8  And how can they be used?
+9.8 --> 15.3  Like the name indicates, a blockchain is a chain of blocks that contains information.
+15.3 --> 20.0  This technique was originally described in 1991 by a group of researchers
+20.0 --> 23.9  and was originally intended to timestamp digital documents
+23.9 --> 28.2  so that it's not possible to backdate them or to tamper with them.
+28.2 --> 29.8  Almost like a notary.
+29.8 --> 37.0  However, it went by mostly unused until it was adapted by Satoshi Nakamoto in 2009
+37.0 --> 39.6  to create a digital cryptocurrency bitcoin.
+40.5 --> 45.0  Now a blockchain is a distributed ledger that is completely open to anyone.
+45.8 --> 47.8  They have an interesting property.
+47.8 --> 50.9  Once some data has been recorded inside a blockchain,
+50.9 --> 53.0  it becomes very difficult to change it.
+53.8 --> 54.8  So how does that work?
+55.4 --> 57.7  Well, let's take a closer look at a block.
+58.3 --> 63.5  Each block contains some data, the hash of the block, and the hash of the previous block.
+64.7 --> 69.0  The data that is stored inside the block depends on the type of blockchain.
+69.5 --> 74.4  The bitcoin blockchain, for example, stores the details about a transaction in here,
+74.4 --> 77.9  such as the sender, receiver, and the amount of coins.
+79.0 --> 81.4  A block also has a hash.
+81.4 --> 84.1  You can compare a hash to a fingerprint.
+84.1 --> 90.2  It identifies a block and all of its contents, and it's always unique, just as a fingerprint.
+91.8 --> 95.6  Once a block is created, its hash is being calculated.
+96.3 --> 100.4  Changing something inside the block will cause the hash to change.
+100.4 --> 105.4  So in other words, hashes are very useful when you want to detect changes to blocks.
+106.0 --> 110.2  If the fingerprint of a block changes, it no longer is the same block.
+111.0 --> 115.0  The third element inside each block is the hash of the previous block.
+115.6 --> 120.7  And this effectively creates a chain of blocks, and it's this technique that makes a blockchain
+120.7 --> 121.5  so secure.
+122.4 --> 123.4  Let's take an example.
+124.1 --> 125.9  Here we have a chain of three blocks.
+126.5 --> 131.2  As you can see, each block has a hash and the hash of the previous block.
+131.9 --> 137.4  So block number three points to block number two, and number two points to number one.
+138.3 --> 140.8  Now the first block is a bit special.
+140.8 --> 144.5  It cannot point to previous blocks because, well, it's the first one.
+145.1 --> 147.4  We call this block the Genesis block.
+148.4 --> 151.7  Now let's say that you tamper with the second block.
+151.7 --> 154.3  This causes the hash of the block to change as well.
+155.3 --> 159.9  In turn, that will make block three and all following blocks invalid
+159.9 --> 163.4  because they no longer store a valid hash of the previous block.
+164.3 --> 168.4  So changing a single block will make all following blocks invalid.
+169.2 --> 172.2  But using hashes is not enough to prevent tampering.
+172.7 --> 176.2  Computers these days are very fast and can calculate
+176.2 --> 178.6  hundreds of thousands of hashes per second.
+179.3 --> 184.7  You could effectively tamper with a block and recalculate all the hashes of other blocks
+184.7 --> 186.6  to make your blockchain valid again.
+188.1 --> 192.4  So to mitigate this, blockchains have something that is called proof of work.
+193.0 --> 196.5  It's a mechanism that slows down the creation of new blocks.
+197.3 --> 202.5  In Bitcoin's case, it takes about 10 minutes to calculate the required proof of work
+202.5 --> 204.2  and add a new block to the chain.
+205.4 --> 208.8  This mechanism makes it very hard to tamper with the blocks
+208.8 --> 213.4  because if you tamper with one block, you'll need to recalculate the proof of work for all
+213.4 --> 214.4  the following blocks.
+215.7 --> 220.2  So the security of a blockchain comes from its creative use of hashing
+220.2 --> 221.8  and the proof of work mechanism.
+222.5 --> 225.8  But there is one more way that blockchains secure themselves
+225.8 --> 227.6  and that is by being distributed.
+228.4 --> 231.3  Instead of using a central entity to manage the chain,
+231.8 --> 236.0  blockchains use a peer-to-peer network and everyone is allowed to join.
+237.0 --> 240.9  When someone joins this network, he gets a full copy of the blockchain.
+241.7 --> 245.2  The node can use this to verify that everything is still in order.
+246.1 --> 249.4  Now let's see what happens when someone creates a new block.
+250.2 --> 252.7  That block is sent to everyone on the network.
+253.4 --> 258.2  Each node then verifies the block to make sure that it hasn't been tampered with
+258.2 --> 262.7  and if everything checks out, each node adds this block to their own blockchain.
+263.7 --> 266.8  All the nodes in this network create consensus.
+266.8 --> 270.1  They agree about what blocks are valid and which aren't.
+271.0 --> 275.0  Blocks that are tampered with will be rejected by other nodes in the network.
+275.7 --> 280.6  So to successfully tamper with a blockchain, you'll need to tamper with all the blocks on the
+280.6 --> 287.4  chain, redo the proof of work for each block and take control of more than 50% of the peer-to-peer
+287.4 --> 293.0  network. Only then will your tampered block become accepted by everyone else.
+293.0 --> 295.0  So this is almost impossible to do.
+295.9 --> 298.8  Blockchains are also constantly evolving.
+298.8 --> 303.0  One of the most recent developments is the creation of smart contracts.
+303.1 --> 308.3  These contracts are simple programs that are stored on the blockchain and can be used to
+308.3 --> 311.8  automatically exchange coins based on certain conditions.
+312.4 --> 314.6  More on smart contracts in a later video.
+315.8 --> 319.4  The creation of blockchain technology piqued a lot of people's interests.
+320.1 --> 324.2  Soon others realized that this technology could be used for other things,
+324.2 --> 329.4  like storing medical records, creating a digital notary or even collecting taxes.
+330.3 --> 336.1  So now you know what a blockchain is, how it works on a basic level and what problems it solves.
+337.0 --> 340.5  Want to learn how you can implement a simple blockchain in JavaScript?
+340.5 --> 342.5  Then check out this video here.
+342.5 --> 345.7  And as always, thank you very much for watching.

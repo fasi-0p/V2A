@@ -1,0 +1,82 @@
+0.0 --> 5.7  Many people believe that Bitcoin is the future of our financial system, but there is a big
+5.7 --> 9.8  issue standing in the way of this goal and that is scalability.
+9.8 --> 11.3  Let me give an example.
+11.3 --> 16.9  The payment provider Visa processes on average around 4000 transactions per second and can
+16.9 --> 21.2  scale up to a maximum of 65,000.
+21.2 --> 25.2  Bitcoin on the other hand can handle up to 7 transactions per second with the current
+25.2 --> 27.6  block size of 1 megabyte.
+27.6 --> 31.1  Not tens of thousands, but just 7.
+31.1 --> 35.7  Clearly the main blockchain isn't very scalable, but it doesn't have to be.
+35.7 --> 40.3  The community has come up with a new technique called the lightning network to solve the
+40.3 --> 42.3  scalability issues.
+42.3 --> 48.4  The key idea is that small and everyday transactions don't have to be stored on the main blockchain.
+48.4 --> 54.4  This avoids the 7 transactions per second limit and is also called the off-chain approach.
+54.4 --> 55.8  So how does it work?
+55.8 --> 58.0  Well, let's take a look at an example.
+58.0 --> 63.3  Let's say that every morning, Bob buys a cup of coffee on his way to work.
+63.3 --> 67.6  Creating a transaction on the blockchain for a simple coffee is really overkill.
+67.6 --> 71.4  He might end up paying more fees than the actual price of his coffee.
+71.4 --> 76.9  However, with the lightning network, Bob can set up a payment channel with the coffee shop.
+76.9 --> 82.2  To do that, both the coffee shop and Bob deposit a certain amount of Bitcoin in what is called
+82.2 --> 84.9  a multi-signature address.
+84.9 --> 91.1  Let's assume that Bob deposits 0.05 Bitcoin and that the coffee shop deposits nothing
+91.1 --> 93.7  because they don't offer refunds.
+93.7 --> 98.8  This multi-signature address is basically like a safe that can only be opened when both
+98.8 --> 100.8  parties agree.
+100.8 --> 105.7  When we open the payment channel, we also make a balance sheet that says how the funds in
+105.7 --> 108.3  the address should be distributed.
+108.3 --> 113.8  So right now it says that Bob will get 0.05 Bitcoin and that the coffee shop will get
+113.8 --> 117.6  0 Bitcoin, the same as they deposited.
+117.6 --> 122.8  Opening the payment channel happens on the main blockchain so that there is full transparency.
+122.8 --> 128.8  The coffee shop owner can see that Bob has deposited 0.05 Bitcoin and he can rest assured
+128.8 --> 133.0  that he will get his money once the channel closes.
+133.0 --> 136.7  Now that the channel is open, Bob can order his morning coffee.
+136.7 --> 140.8  Let's say that the coffee cost 0.001 Bitcoin.
+140.8 --> 144.1  To pay for it, Bob simply changes the balance sheet.
+144.1 --> 149.6  He subtracts the cost of a coffee from his balance and adds it to the coffee shop's balance.
+149.6 --> 159.2  So now it says that Bob will get 0.045 Bitcoin and that the coffee shop gets 0.005 Bitcoin.
+159.2 --> 164.2  Bob and the coffee shop now sign the updated balance sheet with their private keys.
+164.2 --> 169.0  They then each keep a copy of it but they don't do anything else with it.
+169.0 --> 174.2  Bob can keep ordering coffee for as long as he has a balance in the payment channel.
+174.2 --> 178.0  Both of them can make hundreds of thousands of transactions between them.
+178.0 --> 183.0  There is really no limit because this happens away from the main blockchain.
+183.0 --> 185.2  But all good stories come to an end.
+185.2 --> 190.3  The payment channel can be closed at any time by either Bob or the coffee shop.
+190.3 --> 194.8  All they have to do is take the latest balance sheet which was signed by both parties and
+194.8 --> 197.6  broadcast it to the Bitcoin network.
+197.6 --> 202.0  Miners will then validate the signatures on the balance sheet and, if everything checks
+202.0 --> 205.6  out, release the funds according to the balance sheet.
+205.6 --> 209.9  This will create a single transaction on the Bitcoin blockchain.
+209.9 --> 214.8  So the Lightning network can significantly reduce the load on the main blockchain.
+214.8 --> 218.1  It only requires two transactions on the blockchain.
+218.1 --> 221.3  One to open the payment channel and another one to close it.
+221.3 --> 223.2  It's also very safe.
+223.2 --> 228.7  The system ensures that only the latest signed balance sheet can be used to unlock the money.
+228.7 --> 233.0  And because both parties have a signed copy of the balance sheet, they can release the
+233.0 --> 238.1  funds at any time even if the other one doesn't want to cooperate anymore.
+238.1 --> 242.6  So for example, Bob cannot hold the money hostage that belongs to the coffee shop and
+242.6 --> 244.3  vice versa.
+244.3 --> 246.0  But it doesn't end there.
+246.0 --> 250.9  You don't need to open a direct payment channel with everyone you want to send bitcoins to.
+250.9 --> 254.6  You can simply use the network to pass your coins around.
+254.6 --> 255.6  Here is Alice.
+255.6 --> 257.2  She's a friend of Bob.
+257.2 --> 261.4  They have exchanged money on the Lightning network before so they have an active payment
+261.4 --> 262.4  channel.
+262.4 --> 265.6  Now let's say that Alice wants to buy a coffee.
+265.6 --> 269.7  Instead of opening a direct channel to the coffee shop, she can transfer the money to
+269.7 --> 273.3  Bob who will then transfer it to the coffee shop.
+273.3 --> 276.8  So there's no need to create a payment channel with everyone.
+276.8 --> 282.0  In the Lightning network, your payment tries to find a route from person A to person B
+282.0 --> 287.8  and it tries to do this with the least amount of intermediates and the least amount of fees.
+287.8 --> 292.9  This further reduces the strain on the blockchain but it requires the intermediates to have
+292.9 --> 295.7  enough money in their payment channels.
+295.7 --> 298.8  So now you know what the Lightning network is and how it works.
+298.8 --> 301.5  But when will it actually go live?
+301.5 --> 306.0  Well right now there is a proof of concept implementation running on the Bitcoin test
+306.0 --> 307.0  net.
+307.0 --> 314.1  We don't know yet when it will go live for everyone but chances are it happening in 2018.
+314.1 --> 315.9  So that was it for this video.
+315.9 --> 319.3  If you liked it, hit the thumbs up button and get subscribed.
+319.3 --> 322.5  Thank you very much for watching and I'll see you in the next video.
+331.5 --> 333.5  Bye.

@@ -1,0 +1,80 @@
+0.0 --> 6.6  In this video I want to answer your questions about the mRNA vaccines for SARS-CoV-2 or COVID-19.
+7.2 --> 12.2  Once again I've listed all of my sources in the description so please check them out if you have
+12.2 --> 18.6  any doubts. Question one, is this video sponsored by the pharmaceutical industry? No, it wasn't
+18.6 --> 24.7  sponsored by anyone and in fact so far none of the simply explained videos have been sponsored.
+24.7 --> 29.0  This one is no exception. If you want to help and keep this channel independent,
+29.0 --> 35.4  consider becoming a member. Question two, why is a vaccine necessary? As this viewer points out,
+35.4 --> 41.2  our immune system is quite capable. A vaccine is just a helping hand, strengthening our immune
+41.2 --> 47.4  system so that fewer people need to be hospitalized and fewer people die. According to John Hopkins
+47.4 --> 55.8  University, COVID-19 has an observed case fatality rate between 0.5 and 10%. Let's take 2% as the
+55.8 --> 60.6  average and assume that everyone on earth got infected. In this case we would be looking at
+60.6 --> 67.8  154 million fatalities. We can largely prevent these huge losses by developing vaccines so it
+67.8 --> 73.7  makes a lot of sense to immunize as many people as we can. Question three, will the vaccine prevent
+73.7 --> 79.1  the virus from spreading? That's not clear at the moment. After vaccination your body will start
+79.1 --> 85.0  making a specific type of antibody that will circulate in your bloodstream. However the coronavirus
+85.0 --> 90.5  enters our body mostly through our nose and here we have different types of antibodies.
+90.5 --> 95.5  It's currently not known how effective the vaccine's antibodies will be in this region.
+95.5 --> 100.2  This means you won't get sick but you could still have virus particles in your nose ready
+100.2 --> 105.8  to spread to others. That's also why vaccinated people can still test positive for the virus
+105.8 --> 111.5  while not getting sick. But there is hope. One study exposed vaccinated primates to the virus
+111.5 --> 116.3  and observed that they were able to clear the infection from their airways in a shorter time
+116.3 --> 121.6  than others. This indicates that the vaccine reduced how long they were infectious. Time will
+121.6 --> 126.9  tell if the same holds up for humans. Question number four, how is the efficacy of a vaccine
+126.9 --> 132.2  determined? The efficacy expresses the reduction of infections between vaccinated people and
+132.2 --> 138.0  unvaccinated people. Let's take a real phase three study as an example. In this case they were
+138.0 --> 145.4  36,523 participants, half of which got the vaccine, the other half got a placebo.
+145.4 --> 151.0  Participants were closely monitored for 120 days while keeping track of COVID-19 infections.
+151.6 --> 156.4  In the group that received the vaccine, eight people eventually got COVID-19. While in the
+156.4 --> 163.0  placebo group there was a total of 162 cases. The efficacy is then calculated by taking the
+163.0 --> 167.9  difference between these groups and dividing them by the number of cases in the unvaccinated group.
+168.5 --> 175.2  This gives us a 95% efficacy. This approach has been used many times before and is not new.
+175.2 --> 180.9  Question five, mRNA vaccines have never been approved before. They are unsafe and rushed.
+180.9 --> 185.6  This is indeed the first time that mRNA vaccines are approved, but that's not because they were
+185.6 --> 192.3  rushed or because corners were cut. First up, mRNA technology isn't new. It's been researched and
+192.3 --> 197.6  worked on for more than two decades. It's only now that the technology has matured enough for
+197.7 --> 204.4  widespread use. Secondly, we already studied other coronaviruses such as SARS in great detail.
+205.0 --> 208.4  These have similar spikes so we could build upon this knowledge.
+209.1 --> 214.6  Thirdly, there was a lot of money available for research and production. The US alone invested
+214.6 --> 220.1  over 10 billion dollars into developing vaccines. This meant that companies could conduct clinical
+220.1 --> 225.4  trials in parallel while also ramping up manufacturing. Here's how vaccines are
+225.4 --> 231.3  traditionally developed. Notice how it's very sequential, one step at a time. And this is how
+231.3 --> 237.0  the COVID-19 vaccines were developed. You can see that many steps were conducted in parallel,
+237.0 --> 242.2  massively speeding up the process. Not skipping steps, but doing them at the same time.
+242.9 --> 249.8  And finally, regulatory agencies such as the FDA and EMA gave priority to all studies related to
+249.8 --> 256.2  COVID-19. Companies were allowed to periodically submit parts of their research for approval.
+256.2 --> 262.1  This shortens the review time. So in summary, the vaccines were not rushed. They have been massively
+262.1 --> 268.3  accelerated. Question 6. Why can't we use traditional vaccine technologies instead of mRNA?
+268.3 --> 274.0  Well, we can and we do. There are many types of vaccines and mRNA is just one of them.
+274.0 --> 279.9  An older, more commonly used technique is to use weakened viruses to boost your immune system.
+279.9 --> 285.2  I won't go too much into details since this video is focused primarily on mRNA. But here is
+285.2 --> 290.4  a handy overview of the types of vaccines and which company is working on them for COVID-19.
+291.0 --> 298.6  Question 7. Can mRNA in the vaccine alter my DNA? No, our DNA is contained in the nucleus of our cells.
+298.6 --> 305.4  While mRNA does enter our cells, it cannot enter the cell nucleus. mRNA is naturally made by our
+305.4 --> 311.0  body. When a cell needs a particular protein, the nucleus will make a string of mRNA containing
+311.0 --> 317.0  instructions and give that to the rest of the cell for execution. So all we're doing with mRNA
+317.0 --> 323.5  vaccines is temporarily giving our cells other instructions. Side fact, viruses that do become
+323.5 --> 330.7  a part of us are called retroviruses. The most commonly known one is HIV. Question 8. What are
+330.7 --> 336.4  adjuvants and are those dangerous? No, they are not dangerous. Adjuvants are used in almost all
+336.4 --> 342.2  vaccines for the last 70 years. They signal your immune system to come check out what is happening
+342.2 --> 347.0  near the place where you got injected with the vaccine. That way, the immune system will more
+347.0 --> 352.5  quickly notice the odd spikes in your body, resulting in a more robust immune response with
+352.5 --> 358.9  more antibodies. Question 9. Why do some people get sick from the vaccine? It's not uncommon for
+358.9 --> 364.2  vaccines to have some side effects and the ones for the coronavirus are no different. In this
+364.2 --> 370.5  phase 3 study, side effects were common but mild. It included pain at the injection site, fever,
+370.5 --> 376.0  tiredness, chills and headaches. It also found that participants had more side effects from the
+376.0 --> 382.0  second dose than the first dose and that people older than 55 reported fewer side effects than
+382.0 --> 388.6  younger participants. In summary, the mRNA vaccines are generally well tolerated. In most cases,
+388.6 --> 393.5  having some mild side effects is better than actually having to fight off COVID-19.
+394.2 --> 399.8  Question 10. The coronavirus is mutating. Will the vaccine protect me from those mutations?
+399.8 --> 404.7  We're talking about the UK and South African mutations, which allow the virus to spread more
+404.7 --> 410.4  rapidly. Early studies indicate that the mRNA vaccines might be just as effective against the
+410.4 --> 416.0  UK mutation. In this study, researchers took antibodies from people that had received the
+416.0 --> 421.6  two doses of their vaccine and exposed them to the mutation. They found no reduction in
+421.6 --> 426.9  neutralization activity. In other words, the mutated virus did not develop a resistance
+426.9 --> 432.8  against the antibodies produced by the vaccine. The South African mutation is a different story.
+432.8 --> 437.3  That same study found a significant reduction in neutralization activity,
+437.3 --> 442.2  but they noted that the vaccine would still be effective. Some companies are already working
+442.2 --> 447.6  on tweaked versions of their vaccines to offer full protection. However, we do have to be cautious
+447.6 --> 454.1  with this data. It's an early study, so nothing conclusive just yet. So that was it for this video.
+454.1 --> 458.8  All of the answers are published on my website, along with the sources and references that I've
+458.8 --> 467.1  used. The link is in the description. Thanks for watching, consider subscribing and stay healthy.

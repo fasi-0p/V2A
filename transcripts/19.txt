@@ -1,0 +1,88 @@
+0.0 --> 4.5  We've all been there before. You arrive at a coffee shop and you notice a sign that says
+4.5 --> 9.8  FreeWiFi. Of course, you know that you shouldn't really trust FreeWiFi, but what's the worst
+9.8 --> 15.0  that could happen? So you open up your laptop, connect to it and start working.
+15.0 --> 20.0  Simply connecting to an open network is already potentially dangerous. The Wi-Fi protocol cannot
+20.0 --> 25.4  verify that you're actually connected to the Wi-Fi access point from the coffee shop.
+25.4 --> 29.8  Someone else can create a Wi-Fi network with just the same name and then your devices will
+29.8 --> 35.2  connect to it instead. That is because devices automatically connect to the strongest known
+35.2 --> 41.2  network available and a known network is only identified by its name. With a device like
+41.2 --> 46.8  a Wi-Fi pineapple, an attacker can do just that. Set up a fake Wi-Fi network to capture
+46.8 --> 51.5  and analyze your internet traffic. But let's ignore that risk and connect to the Wi-Fi
+51.5 --> 56.7  network anyway. At this point, your device becomes a part of the coffee shop's network.
+56.7 --> 60.9  This means your device can see and talk to all of the other devices that are connected
+60.9 --> 66.4  to the same Wi-Fi network, but they can also connect to you. If you're running outdated
+66.4 --> 71.0  software, you could be hacked by someone sitting just a few tables away.
+71.0 --> 75.4  And it's not as difficult as it sounds. There are penetration testing tools available like
+75.4 --> 81.4  Metasploit that can scan any device on the network and identify weak points. Once complete,
+81.4 --> 87.0  the tool returns a list of security holes that can be abused to get access to the device in question.
+87.0 --> 93.2  Yikes. So keeping your devices up to date and having a firewall enabled is a must.
+93.2 --> 98.9  Updates to fix newly discovered issues and a firewall to block people from accessing your device
+98.9 --> 104.7  through the network unwantedly. So with the latest updates installed, you continue working.
+104.7 --> 109.7  But right now, all of your unencrypted traffic can be intercepted by someone who's on the same
+109.7 --> 115.4  network. That includes things like unencrypted email, FTP connections and every website without
+115.4 --> 122.3  HTTPS. Whoa, that sounds really bad. So you decide to keep it safe and instead log into your bank
+122.3 --> 127.7  account, your favorite social media website or the internet from your work. You know that these
+127.7 --> 133.4  are safe because your browser shows a green lock next to the website's address. But as it turns out,
+133.4 --> 138.2  that's a common misconception. The lock means that the connection between the website's server
+138.2 --> 144.2  and your computer is encrypted with the TLS or SSL protocol. So nobody on the network can see
+144.2 --> 150.2  your username and password, for instance. You can see this because the URL starts with HTTPS
+150.2 --> 156.2  instead of HTTP. But the lock doesn't guarantee that you're connected to a legitimate website.
+156.2 --> 161.7  A fake or malicious website can also get a green lock next to its name without much trouble.
+161.7 --> 166.1  One way attackers can take advantage of this is by trying to redirect your bank traffic,
+166.1 --> 172.1  for instance, to another domain name that is very similar, like going from generalbank.com
+172.1 --> 179.0  to generalbank.com. Did you spot the difference? The A in general was replaced by a Cyrillic
+179.0 --> 186.0  character. This is called the IDN homograph attack. And browsers now have special protection on board
+186.0 --> 191.1  that will warn you when a domain name has a mix of regular and Cyrillic characters.
+191.2 --> 196.5  However, this technique can still be used with misspellings, like generalbank.com,
+196.5 --> 202.2  where the L was replaced with a capital I. To make matters even worse, the fake website can be
+202.2 --> 208.2  made to look almost identical to the real one, and it can have a green lock. So in a way,
+208.2 --> 213.3  the green lock gives a false sense of security. That's one of the reasons why browsers like
+213.3 --> 219.2  Chrome and Safari are putting a smaller emphasis on the lock. They want HTTPS to be enabled by
+219.2 --> 225.0  default and only draw attention when a website isn't using it. In fact, that move is also making
+225.0 --> 231.2  another type of attack harder. SSL stripping. In a nutshell, an attacker can try to downgrade
+231.2 --> 239.0  your secure HTTPS connection to an unsecure HTTP one. When successful, the data you send or receive
+239.0 --> 243.9  over the connection won't be encrypted, allowing the attacker to see what sites you visit,
+243.9 --> 249.0  along with your username and password. However, modern browsers are now warning you when you're
+249.0 --> 254.4  about to log into a website with an unsecured connection. That makes SSL stripping harder,
+254.4 --> 258.6  because people are very likely to spot the warning that most browsers will put up.
+259.2 --> 263.9  Right now, it's still a small warning, but eventually it will be a bold red one.
+263.9 --> 269.2  But SSL stripping can also be prevented if a website owner implements HSTS or
+269.2 --> 275.0  HTTP strict transport security. This allows them to say that their website should only be loaded
+275.0 --> 280.7  through a secure connection. If someone tricks you into loading an unsecure version of that website,
+280.7 --> 286.6  your browser will just outright refuse it. The only downside is that website owners have to
+286.6 --> 293.2  explicitly enable this feature. If one fails to do so, you could be vulnerable. A solution to this
+293.2 --> 299.2  problem would be to use a browser extension like HTTPS everywhere that automatically switches to
+299.3 --> 305.6  HTTPS if a given website supports it. Well, that all sounds pretty bad, but then again,
+305.6 --> 311.5  open wifi is completely open. What if the owner of the coffee shop puts a password on his network
+311.5 --> 315.8  and then writes that password somewhere on a wall? Would that make a difference?
+315.8 --> 321.5  Well, not really. It's almost like locking your front door, but leaving the key on the outside.
+321.5 --> 326.1  The password only prevents people from joining the network if they haven't been inside to
+326.1 --> 330.4  see it written on the wall. If you know the password, however, you can join the network,
+330.4 --> 334.0  become a part of it and perform all of the attacks that we just discussed.
+334.8 --> 339.2  Alright, so enough with all the possible ways you could be hacked on public wifi.
+339.2 --> 344.8  How can you protect yourself? The most obvious answer is to avoid public wifi networks at all
+344.8 --> 349.8  costs. But that is pretty difficult with us depending more and more on having an internet
+349.8 --> 355.0  connection. A better, but potentially more expensive solution would be to invest in a good
+355.0 --> 361.0  mobile data plan and use a mobile hotspot whenever you don't have a trusted wifi network.
+361.0 --> 365.3  The connection between your computer and the hotspot is encrypted and so in theory,
+365.3 --> 372.2  it cannot be intercepted. And finally, you could use the free wifi anyway and use a VPN to secure
+372.2 --> 378.2  your traffic. VPN is short for virtual private network and it creates a secure connection,
+378.2 --> 384.4  also called a tunnel, between you and the VPN server. All your internet traffic is then sent
+384.5 --> 390.2  through this tunnel and encrypted in the process. That way, nobody on the public wifi can see your
+390.2 --> 396.1  traffic or mess with it. However, there is a catch. If you can't set up your own VPN server,
+396.1 --> 402.0  you have to use a third party service, which will cost a bit of money. And secondly, the VPN
+402.0 --> 407.5  provider can see all of your unencrypted traffic. So it's best that you pick a service from a vendor
+407.5 --> 412.8  or brand that you trust, or one that has a good reputation when it comes to privacy.
+413.4 --> 417.7  Before ending this video, I want to mention that you don't have to feel bad if you're using
+417.7 --> 424.7  free wifi without thinking about the security risks. According to a 2017 study from Symantec,
+424.7 --> 432.0  75% of the 15,000 participants didn't use a VPN when connecting to an open wifi network.
+432.0 --> 438.0  That same study also revealed that 60% of participants felt safe using public wifi,
+438.0 --> 445.0  even though it's anything but safe. And 87% even admitted to accessing their personal emails or even
+445.0 --> 451.8  bank accounts using free wifi. So time for a conclusion then. Free wifi hot spots are potentially
+451.8 --> 457.4  very dangerous and few people really understand the risks. As shown in this video, there are a bunch
+457.4 --> 462.4  of security features on the web and on our computers that protect us. But unfortunately,
+462.4 --> 467.4  the bad guys are pretty clever in finding ways around those. So here is a simply explained
+467.4 --> 473.5  top tip. Keep your devices up to date and if you must, use a VPN when connecting to an open
+473.5 --> 478.8  wifi network. And it's up to you if you want to use an existing service for this or if you want to
+478.8 --> 484.1  set one up yourself. So that was it for this video. If you learned something from it, hit that like
+484.1 --> 489.6  button and consider getting subscribed. Thank you so much for watching and I'll see you in the next video.

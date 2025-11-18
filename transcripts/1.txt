@@ -1,0 +1,83 @@
+0.0 --> 2.0  Let's talk about dark mode.
+2.0 --> 5.9  Many apps support it, but does dark mode have any advantage over light mode?
+5.9 --> 7.2  Or is it just a gimmick?
+7.2 --> 11.2  Well, as always, the answer lies somewhere in the middle, so let's start by looking
+11.2 --> 13.6  at the advantages of using dark mode.
+13.6 --> 18.3  The most commonly cited benefit is that dark mode increases battery life, and that is true
+18.3 --> 21.3  if your device has an OLED display.
+21.3 --> 27.2  Black pixels on an OLED display don't consume power, so more black pixels equal less power,
+27.2 --> 30.1  and when I say black, I really mean black.
+30.1 --> 32.8  Dark shades of blue or gray don't count.
+32.8 --> 36.0  And keep in mind, this is only for OLED displays.
+36.0 --> 39.6  If your device has an LCD, then things get more complicated.
+39.6 --> 43.8  Most LCDs have a backlight that illuminates the entire display, meaning that their power
+43.8 --> 48.2  consumption is roughly the same regardless of the color of each pixel.
+48.2 --> 50.7  So no battery savings from dark mode.
+50.7 --> 55.5  Modern LCD panels have local dimming, where the screen's backlight is split into independently
+55.5 --> 57.0  controlled zones.
+57.0 --> 61.8  If a zone only contains black pixels, then the backlight can be turned off in that zone,
+61.8 --> 63.1  saving energy.
+63.1 --> 67.7  So dark mode does save some power on modern LCD displays as well.
+67.7 --> 70.5  So how much power can dark mode really save?
+70.5 --> 75.2  Some websites say it uses 5-30% less power, but it actually depends on the brightness
+75.2 --> 76.9  of your screen.
+76.9 --> 81.3  This study found that at default brightness levels, dark mode reduces power consumption
+81.3 --> 84.5  by just 3-9%, barely noticeable.
+84.6 --> 89.6  However, when you crank the brightness to 100%, dark mode can reduce power consumption
+89.6 --> 94.1  by 39-47%, which is a huge gain.
+94.1 --> 97.3  The second benefit is that dark mode reduces eye strain.
+97.3 --> 101.6  Eye strain occurs when your eyes get tired from long intense use, like when driving
+101.6 --> 105.6  long distances or staring at a screen for long periods of time.
+105.6 --> 111.1  When it comes to displays, eye strain is primarily caused by brightness, especially if that brightness
+111.1 --> 114.0  is not adjusted to our surroundings.
+114.0 --> 119.2  The eyes have adapted to look at things with equal brightness compared to our surroundings.
+119.2 --> 124.4  Using a bright white screen at night in a dimly lit room will cause an irritating glare
+124.4 --> 127.7  and it will make your eyes feel tired more quickly.
+127.7 --> 132.2  And looking at a dim screen during the day will require your eyes to work harder to make
+132.2 --> 134.3  out the letters on the screen.
+134.3 --> 139.2  So dark mode can definitely help to reduce the amount of bright white pixels, which reduces
+139.2 --> 143.5  eye strain when using your device at night or in a dimly lit room.
+143.6 --> 145.8  But that is where the advantages end.
+145.8 --> 149.4  Here are two surprising downsides of using dark mode.
+149.4 --> 154.3  First up, while using dark mode can reduce eye strain, it can also worsen it.
+154.3 --> 159.6  A study from 2013 found that dark mode worsens your ability to recognize shapes.
+159.6 --> 164.6  When looking at a dark object or screen, our pupils open wider to let in more light and
+164.6 --> 167.5  that decreases the sharpness of your vision.
+167.5 --> 172.6  White letters will bleed into the dark background, making them blurry and harder to read.
+172.6 --> 174.7  This is called the halation effect.
+174.7 --> 179.3  Your eyes will have to work harder to make out the letters on the screen and that increases
+179.3 --> 180.8  eye strain.
+180.8 --> 185.3  And blurry letters bring us to the most surprising disadvantage of using dark mode.
+185.3 --> 188.0  It affects our cognitive performance.
+188.0 --> 192.4  One study found that you'll read slower while using dark mode and if you prove reading a
+192.4 --> 195.6  document you'll find fewer spelling mistakes.
+195.6 --> 199.8  So better switch to light mode when writing an important email to your boss.
+199.8 --> 204.0  Now another study found that the downsides of dark mode are even worse when using small
+204.0 --> 205.2  font sizes.
+205.2 --> 207.8  And yet that is what many people do.
+207.8 --> 212.4  We tend to use small font sizes to cram more information on the screen, making us feel
+212.4 --> 214.5  like we're more productive.
+214.5 --> 216.6  But actually the opposite is true.
+216.6 --> 222.8  By reducing the font size we reduce our reading speed and we increase eye strain even further.
+222.8 --> 227.6  Now these disadvantages might come as a surprise, but from an evolutionary context they make
+227.6 --> 229.0  a lot of sense.
+229.0 --> 233.6  Dark modes have evolved to hunt during the day, so our eyes are adapted to spotting dark
+233.6 --> 236.0  objects against a light background.
+236.0 --> 239.8  The military uses this evolutionary trait to their advantage.
+239.8 --> 244.6  The golden rule of camouflage is to never ever expose yourself on a hilltop because
+244.6 --> 249.2  your dark silhouette can easily be identified against the bright sky.
+249.2 --> 250.6  So there you have it.
+250.6 --> 254.4  Dark mode is being adopted everywhere, but it's not without downsides.
+254.4 --> 259.3  It can both increase and decrease eye strain, it slows your reading speed and it affects
+259.3 --> 261.3  your cognitive performance.
+261.3 --> 264.8  If you want to support the channel, consider signing up for my newsletter to get a monthly
+264.8 --> 267.4  dose of science and technology news.
+267.4 --> 271.8  Last month I wrote about how New York is sinking because of the weight of all of the buildings
+271.8 --> 275.2  and how scientists harvest electricity from the air.
+275.2 --> 279.9  Oh and by the way, this video was inspired by someone calling me a freak for using a
+279.9 --> 282.5  light color theme while coding.
+282.5 --> 284.8  In the end I think it's all about preference.
+284.8 --> 288.5  I enjoy using light mode during the day and dark mode at night.
+288.5 --> 293.7  But then again, bugs are attracted to light, so maybe I should only use dark mode while
+293.7 --> 295.0  coding?
+295.0 --> 296.6  Thanks for watching, until next time.

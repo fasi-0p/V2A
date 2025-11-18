@@ -1,0 +1,68 @@
+0.0 --> 4.6  When you hang around programmers, you might have heard about APIs and how they can be used to
+4.6 --> 11.6  perform certain tasks or retrieve some data. But what are these exactly and why were they created?
+11.6 --> 17.5  Let me explain the problem with a simple, non-IT related example. When you go to a restaurant
+17.5 --> 23.4  and order some food, you interact with the waiter. You can order food and drinks, ask questions about
+23.4 --> 29.5  the menu, request and pay the bill and much more. In this example, the waiter is shielding you from
+29.5 --> 34.6  all the complicated stuff that happens behind the scenes. You don't have to worry about stoves,
+34.6 --> 41.0  ovens, dishes, managing stock or pouring drinks. He is the interface between you and all of the
+41.0 --> 46.6  services that a restaurant offers, giving you a way to interact with the restaurant while still
+46.6 --> 52.6  shielding you from all the complexity behind the scenes. In a way, the waiter can be seen as the
+52.6 --> 58.4  API of the restaurant and through this example, you intuitively understand why they are useful.
+58.9 --> 64.7  The term API stands for Application Programmable Interface and it's a way for different programs
+64.7 --> 70.8  to work together in various ways. There are many types of APIs and reasons why they are used.
+70.8 --> 76.4  I'll highlight four of them in this video. For starters, APIs can be used to get access to data
+76.4 --> 81.6  from third parties. In the restaurant example, the waiter can give you information on the status
+81.6 --> 87.1  of your order without you having to go to the kitchen yourself. Another example would be the
+87.1 --> 92.9  weather app on your phone. Google or Apple have not gone out and put temperature sensors all over
+92.9 --> 99.3  the world. Now instead, these apps use the API of a third party to retrieve weather predictions.
+99.3 --> 104.6  Apple, for instance, is using the API of the weather channel. APIs allow different apps and
+104.6 --> 110.9  services to exchange information. These days, it's hard to find a service that doesn't have an API.
+110.9 --> 116.6  There are APIs to look up recipes, lyrics, information on barcodes, zip codes, available
+116.6 --> 122.5  parking spaces, public holidays, and so on and so on. But aside from just accessing data,
+122.5 --> 128.2  APIs can also be used to hide complexity and perform tasks. In the restaurant example,
+128.2 --> 134.4  you don't need to know how to prepare a perfect roll of sushi. You just order one. Another example
+134.4 --> 139.8  would be the operating systems on our computers and phones. App developers don't have to worry
+139.8 --> 144.8  about setting up a Wi-Fi connection, drawing shapes onto the screen to make a beautiful user
+144.8 --> 151.6  interface, or how to talk to the various sensors like the accelerometer or GPS. No, instead, the
+151.6 --> 158.0  operating system gives developers a bunch of APIs that simplify all of this. If an app wants to show
+158.0 --> 163.8  a button on the screen, it just asks the system to render one. The app doesn't have to worry about
+163.8 --> 169.6  what device it is running on, what hardware it has, screen resolution, or anything like that.
+169.6 --> 173.8  It makes developers more efficient because they can focus on what matters to them.
+174.3 --> 180.5  But aside from accessing data and abstracting complexity, APIs can also be used to extend
+180.5 --> 187.2  functionality. For instance, on iOS, applications can show a widget in the notification center.
+187.2 --> 193.1  And to do that, the app notifies the system through an API that it has a widget available.
+193.1 --> 197.7  If the user now adds this widget to their notification center, the system will contact
+197.7 --> 203.6  the app and ask how would you display the widget. Another example is Siri Google Assistant
+203.6 --> 209.4  or Alexa. These personal assistants are quite clever, but external developers can use the
+209.4 --> 215.4  assistant's API to extend the functionalities even further. My Google Home, for instance,
+215.4 --> 220.7  didn't know how to turn my smart outlets on or off. But that changed when the vendor
+220.7 --> 226.1  integrated with the Google Assistant through its API. Suddenly, Google became aware of the new
+226.1 --> 231.9  hardware, its capabilities, and how to interact with it. You might not realize it, but APIs are
+232.0 --> 237.8  all around us. You've probably seen messages like these, your phone asking for permission to use
+237.8 --> 245.0  your location or microphone. And that brings us to the final use case. APIs can be used as gatekeepers.
+245.0 --> 250.6  For instance, on mobile platforms, the system only has a handful of APIs that can be used to get
+250.6 --> 256.9  your location. And because it's centralized in the system, it's really easy for iOS or Android
+256.9 --> 263.0  to notify you when an app is using your location. So it's not the app that is being nice and asks
+263.0 --> 269.1  your permission first. No, it's the system that does it for them. There is no way around it.
+269.1 --> 274.6  What's more, the system also gives the ability to revoke this permission at a later time,
+274.6 --> 279.1  should you change your mind. So every time your phone asks for your permission,
+279.1 --> 284.4  you know that an app is using an API of the system, and one that is privacy sensitive.
+284.4 --> 290.3  And while this is great, there is an issue with this. Usually permission is only asked once.
+290.3 --> 294.9  You might have used your Google or Facebook account to log into another website or app.
+295.4 --> 301.7  It's easy, fast and convenient. But by doing that, we also give the website or app the permission to
+301.7 --> 307.3  access some of our data, like our name or email address. This is great because it puts us in
+307.3 --> 313.2  control of our personal data. If you don't want to share it, you just deny it. However, the problem
+313.2 --> 319.1  here is that sometimes these permissions are long lasting. And after a while, we forget what apps or
+319.1 --> 325.2  websites we gave permission to access our data. This is what allowed Cambridge Analytica to collect
+325.2 --> 331.5  massive amounts of data through the Facebook API. They created a personality quiz that asked for
+331.5 --> 336.7  permission to get some of your personal data. However, if you gave it permission, the app could
+336.7 --> 343.0  silently access your data for months, even if you didn't use it anymore. Instead, you had to revoke
+343.0 --> 349.2  the permission through the Facebook website. So in short, APIs can act as gatekeepers, protecting
+349.2 --> 354.7  our personal data and only giving it out to the apps that we choose. But we should be aware about
+354.7 --> 361.7  how long these permissions last and revoke them when we no longer use an app. So time for a conclusion.
+361.7 --> 367.8  APIs are all around us. They are used to get access to data so that multiple apps or services can
+367.8 --> 373.6  work together. They can also hide complexity for developers, allowing them to not waste time on
+373.6 --> 380.1  figuring out how GPS works, for instance. APIs can also be used to extend functionality of existing
+380.1 --> 386.8  systems. And finally, they can act as gatekeepers to protect our personal data. I hope this video
+386.8 --> 392.0  brought some clarity to a topic that is mostly discussed among developers. Let me know your
+392.0 --> 397.6  thoughts or questions in the comments below. Thank you so much for watching. Until next time.

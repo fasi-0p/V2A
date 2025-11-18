@@ -1,0 +1,77 @@
+0.0 --> 4.3  Have you ever had a problem with your computer and someone told you to fix it by clearing
+4.3 --> 7.0  your browser cache or your DNS cache?
+7.0 --> 10.2  Chances are you've heard of these, but what is a cache?
+10.2 --> 15.0  Simply put, caching means storing frequently demanded things closer to those asking for
+15.0 --> 18.8  it, and by doing that you increase the access speed.
+18.8 --> 22.6  The book Algorithms to Live By gives a simple explanation.
+22.6 --> 26.8  Imagine you're doing research for writing a paper or making a video and that you need
+26.8 --> 29.4  to consult a book from the library.
+29.4 --> 33.8  You could go to the library every time you need a piece of information, but instead you
+33.8 --> 39.1  will most likely take the book home with you and put it on your desk for faster access.
+39.1 --> 42.4  In this example, your desk became a cache.
+42.4 --> 46.4  Instead of making round trips to the library, which would slow down your progress, you can
+46.4 --> 49.2  now grab the book straight from your desk.
+49.2 --> 55.0  You intuitively understand why caching is much faster, but also that it is more limited.
+55.0 --> 59.5  You don't have as much space on your desk as the library has in its stacks.
+59.5 --> 62.8  You can only keep a limited amount of books in your cache.
+62.8 --> 64.4  More on that later.
+64.4 --> 67.4  Let's first look at how caches are used in computers.
+67.4 --> 72.6  For example, your web browser caches resources from frequently visited websites.
+72.6 --> 77.4  The first time you visit youtube.com, your browser knows nothing about it, so it downloads
+77.4 --> 80.1  all of the resources that make up YouTube.
+80.1 --> 84.5  The logo, icons, fonts, scripts, and all of the thumbnails.
+84.5 --> 89.1  On subsequent visits, however, all of this can be retrieved from cache, making the webpage
+89.1 --> 94.3  load much faster because your browser only needs to download newer content that it hasn't
+94.3 --> 95.8  seen before.
+95.8 --> 101.2  On YouTube, that might be only the thumbnails of videos uploaded after your last visit.
+101.2 --> 106.6  In this case, your browser cache is storing internet resources on your local computer.
+106.6 --> 111.1  It's much faster to retrieve them from your SSD or hard drive than to download them from
+111.1 --> 112.4  the internet.
+112.4 --> 116.9  This is also the reason why clearing your cache can fix certain problems.
+116.9 --> 120.8  Sometimes websites update their designs or scripts, but your browser will keep using
+120.8 --> 124.1  the older version in its cache.
+124.1 --> 127.2  But it's not just browsers that have a cache.
+127.2 --> 129.6  Modern devices have tons of caches.
+129.6 --> 135.6  On the hardware side, processors, GPUs, hard drives, SSDs all have caches.
+135.6 --> 138.1  This creates a memory hierarchy.
+138.1 --> 143.0  At the top of it, you will find the memory embedded in processors, which is super fast
+143.0 --> 144.6  but very small.
+144.6 --> 149.4  At the bottom, you'll find things like SSDs and hard drives, which have huge capacities
+149.4 --> 153.6  but are very slow compared to what's at the top of this hierarchy.
+153.6 --> 156.4  You find a similar structure in the library.
+156.4 --> 160.9  Frequently checked out books might be kept in a small cabinet near the front desk, where
+160.9 --> 163.2  it's super fast to retrieve them.
+163.2 --> 165.8  Less popular books will be moved to the stacks.
+165.8 --> 169.4  There's much more space there compared to the front desk, but it requires a bit of
+169.4 --> 172.2  searching to find the book you're after.
+172.2 --> 177.9  And finally, you'll have old books that are rarely checked out and moved to offsite storage.
+177.9 --> 182.8  While this archive is probably the largest of all, it's also the slowest to access.
+182.8 --> 189.1  It requires you to ask a staff member to retrieve them for you, potentially taking a few days.
+189.1 --> 192.7  On the software side, caches are also everywhere.
+192.7 --> 198.4  Caches like systems, browsers, DNS, databases and web servers all use caches and every time
+198.4 --> 200.1  for the same purpose.
+200.1 --> 205.0  Store data in a fast memory so it can be retrieved quicker later on.
+205.0 --> 208.1  But let's go back to the book cache on your desk.
+208.1 --> 211.3  At some point, your desk will be filled up with books.
+211.3 --> 214.0  So what do you do when your cache is full?
+214.0 --> 219.3  How do you determine which books or which items to keep in your cache and which to remove?
+219.3 --> 222.2  This is called a cache eviction strategy.
+222.2 --> 225.9  Distinctively, you might return the books that you haven't used in a while.
+225.9 --> 229.8  This is called least recently used or LRU for short.
+229.8 --> 232.6  And it's an effective and easy to implement strategy.
+232.6 --> 237.3  It does however require you to keep track of when items in your cache were last accessed,
+237.3 --> 239.6  which does slow it down a bit.
+239.6 --> 242.6  Another eviction strategy is random replacement.
+242.6 --> 245.8  This one is a bit weird as it doesn't try to be smart.
+245.8 --> 250.0  Instead, when the cache is full, it just removes a random item.
+250.0 --> 255.2  While this sounds like a bad idea, in practice it's actually not far off LRU and it's
+255.2 --> 257.2  much simpler to implement.
+257.2 --> 261.7  That's why it's used in small ARM processors to keep their designs simple.
+261.7 --> 267.2  But what fascinated me the most about caching was that it was invented in 1965 by Maurice
+267.2 --> 270.2  Seuilkes, a British computer scientist.
+270.2 --> 274.4  In his paper, he wrote that cache memory should automatically fill itself with data
+274.4 --> 279.1  from a slower main memory to speed up subsequent requests.
+279.1 --> 284.8  It's amazing to see that technologies invented over 55 years ago are still being used and
+284.8 --> 287.4  perfected to this day.
+287.4 --> 292.4  Thanks for watching this video, I hope you liked it and if you did, please consider subscribing.
+292.4 --> 294.0  And I'll see you in the next video.

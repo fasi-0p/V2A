@@ -1,0 +1,121 @@
+0.0 --> 5.0  Hey there, my name is Xavier and you might have read articles online saying that cryptocurrencies
+5.0 --> 10.4  like bitcoin uses enormous amounts of electricity to secure their networks.
+10.4 --> 11.6  But why is that?
+11.6 --> 15.5  And more importantly, what are the alternatives?
+15.5 --> 20.1  Mining new coins takes a lot of computing power because of the proof of work algorithm.
+20.1 --> 25.9  The idea was first introduced in 1993 to combat spam emails and was formally called proof
+25.9 --> 27.9  of work in 1997.
+28.1 --> 35.0  However, the technique went largely unused until Satoshi Nakamoto created bitcoin in 2009.
+35.0 --> 39.9  He realized that this mechanism could be used to reach consensus between many nodes on a
+39.9 --> 44.6  network and he used it as a way to secure the bitcoin blockchain.
+44.6 --> 50.0  However, the proof of work algorithm works by having all nodes solve a cryptographic
+50.0 --> 51.1  puzzle.
+51.1 --> 57.0  This puzzle is solved by miners and the first one to find a solution gets the miner reward.
+57.0 --> 62.2  And this has led to a situation where people are building larger and larger mining farms
+62.2 --> 63.7  like this one.
+63.7 --> 70.1  According to Digiconomist, bitcoin miners alone uses about 54 terawatt hours of electricity,
+70.1 --> 75.8  enough to power 5 million households in the US or even power the entire country of New
+75.8 --> 78.0  Zealand or Hungary.
+78.0 --> 79.8  But it doesn't stop there.
+79.8 --> 83.8  Proof of work gives more rewards to people with better and more equipment.
+83.8 --> 88.3  The higher your hash rate is, the higher the chance that you'll have to create the next
+88.3 --> 91.1  block and thus receiving the mining reward.
+91.1 --> 96.5  To increase chances even further, miners can come together in what's called mining pools.
+96.5 --> 102.5  They combine their hashing power and distribute the awards evenly across everyone in the pool.
+102.5 --> 107.6  So to sum it up, proof of work is causing miners to use massive amounts of electricity
+107.6 --> 112.4  and it encourages the use of mining pools which makes the blockchain more centralized
+112.4 --> 114.9  as opposed to decentralized.
+114.9 --> 119.9  So to solve these issues, we have to find a new consensus algorithm that is as effective
+119.9 --> 122.2  or better than proof of work.
+122.2 --> 127.8  In 2011, a bitcoin talk forum user called Quantum Mechanic proposed a new technique
+127.8 --> 130.3  that he called proof of stake.
+130.3 --> 136.1  The basic idea is that letting everyone compete against each other with mining is just wasteful.
+136.1 --> 141.4  So instead, proof of work uses an election process in which one node is randomly chosen
+141.4 --> 143.1  to validate the next block.
+143.1 --> 145.9  Oh yeah, small difference in terminology here.
+145.9 --> 150.1  Proof of stake has no miners but instead has validators and it doesn't let people
+150.1 --> 155.3  mine new blocks but instead mint or forge new blocks.
+155.3 --> 157.5  Validators aren't chosen completely randomly.
+157.5 --> 162.0  To become a validator, a node has to deposit a certain amount of coins into the network
+162.0 --> 163.3  as stake.
+163.3 --> 166.3  You can think of this as a security deposit.
+166.3 --> 170.5  The size of the stake determines the chances of a validator to be chosen to forge the
+170.5 --> 171.5  next block.
+171.5 --> 174.1  It's a linear correlation.
+174.1 --> 179.7  Let's say Bob deposits $100 into the network while Alice deposits $1000.
+179.7 --> 185.3  Alice now has a 10 times higher chance of being chosen to forge the next block.
+185.3 --> 190.1  This might not seem fair because it favors the rich but in reality it's more fair compared
+190.1 --> 191.8  to proof of work.
+191.8 --> 196.2  With proof of work, rich people can enjoy the power of economies at scale.
+196.2 --> 201.9  The price they pay for mining equipment and electricity doesn't go up in a linear fashion.
+201.9 --> 205.7  Instead the more they buy, the better prices they can get.
+205.7 --> 207.3  But back to proof of stake.
+207.3 --> 211.6  If a node is chosen to validate the next block, he'll check if all the transactions
+211.6 --> 213.8  within it are indeed valid.
+213.8 --> 218.9  And if everything checks out, the node signs off on the block and adds it to the blockchain.
+218.9 --> 223.6  As a reward, the node receives the fees that are associated with the transactions inside
+223.6 --> 224.9  this block.
+225.6 --> 229.4  Ok but how can we trust other validators on the network?
+229.4 --> 231.7  Well that's where the stake comes in.
+231.7 --> 236.2  Validators will lose a part of their stake if they approve fraudulent transactions.
+236.2 --> 240.4  As long as the stake is higher than what the validator gets from the transaction fees,
+240.4 --> 243.3  we can trust them to correctly do their job.
+243.3 --> 246.2  Because if not, they'll lose more money than they'll gain.
+246.2 --> 250.9  It's a financial motivator and holds up as long as the stake is higher than the sum of
+250.9 --> 253.0  all the transaction fees.
+253.0 --> 257.8  If a node stops being a validator, his stake plus all the transaction fees that he got
+257.8 --> 261.3  will be released after a certain period of time.
+261.3 --> 265.2  Not straight away because the network still needs to be able to punish you should they
+265.2 --> 269.0  discover that some of your blocks were actually fraudulent.
+269.0 --> 273.3  So the difference between proof of work and proof of stake are quite significant.
+273.3 --> 277.8  Proof of stake doesn't let everyone mine for new blocks and therefore uses considerably
+277.8 --> 279.6  less energy.
+279.6 --> 281.7  It's also more decentralized.
+281.7 --> 282.7  How is that?
+282.7 --> 285.9  Well in proof of work we have something called mining pools.
+285.9 --> 290.0  Those are people who are teaming up to increase their chances of mining a new block and thus
+290.0 --> 291.7  collecting a reward.
+291.7 --> 296.5  However, these pools now control large portions of the Bitcoin blockchain.
+296.5 --> 300.2  They centralize the mining process and that could be very dangerous.
+300.2 --> 304.0  If the three biggest mining pools would merge together, they would have a majority in the
+304.0 --> 308.3  network and could start approving fraudulent transactions.
+308.3 --> 312.5  Another important advantage is that setting up a node for a proof of stake based blockchain
+312.5 --> 316.2  is a lot less expensive compared to a proof of work based one.
+316.2 --> 320.6  You don't need expensive mining equipment and thus proof of stake encourages more people
+320.6 --> 325.7  to set up a node, making the network more decentralized and also more secure.
+325.7 --> 330.3  But even proof of stake isn't perfect and it also has some flaws.
+330.3 --> 334.8  Now you might think, hold on a minute, if I buy a majority stake in the network, I can
+334.8 --> 338.1  effectively control it and approve fake transactions.
+338.5 --> 344.3  This is called the 51% attack and it was first discussed as a weak point of the proof of
+344.3 --> 345.9  work algorithm.
+345.9 --> 351.1  If a single miner or group of miners can obtain 51% of the hashing power, they can effectively
+351.1 --> 353.3  control the blockchain.
+353.3 --> 357.6  Proof of stake on the other hand makes this attack very impractical depending on the value
+357.6 --> 359.7  of a cryptocurrency.
+359.7 --> 365.0  If Bitcoin would be converted to proof of stake, acquiring 51% of all the coins would
+365.0 --> 369.0  set you back a whopping $79 billion.
+369.0 --> 373.3  So the 51% is actually less likely to happen with proof of stake.
+373.3 --> 375.3  But that's not the only risk.
+375.3 --> 379.8  Proof of stake algorithms also have to be careful how they select the next validator.
+379.8 --> 384.4  It cannot be completely random because the size of the stake has to be factored in.
+384.4 --> 389.0  But at the same time, the stake alone isn't enough because that will favor rich people
+389.0 --> 393.5  who will get chosen more frequently, will collect more transaction fees, become even
+393.5 --> 399.4  richer and thus increase their chances of being chosen as a validator even further.
+399.4 --> 404.7  There are a number of proposals to fix this, like coinage based selection for instance.
+404.7 --> 408.8  Another potential problem is when the network chooses the next validator but he doesn't
+408.8 --> 410.7  turn up to do his job.
+410.7 --> 416.1  This could easily be solved by choosing a large number of backup validators as a fallback.
+416.1 --> 420.7  In short, proof of stake brings additional risks when compared to proof of work and a
+420.7 --> 425.9  lot of research is needed to understand these risks and then to mitigate them.
+425.9 --> 430.5  Alright so now that we know what proof of stake is, what benefits it has, what risks
+430.5 --> 434.3  are involved, let's take a look at real world usage.
+434.3 --> 440.9  A few examples of coins that use it right now are Peercoin, Lisk and NXT, but more cryptocurrencies
+440.9 --> 443.9  are likely to follow in the future.
+443.9 --> 449.2  Ethereum for instance is working on implementing a proof of stake system which they call CASPER.
+449.2 --> 454.1  It's currently deployed on the Ethereum testnet and is actively being developed.
+454.1 --> 459.1  And also the Cardano project has long been working on creating a provable secure proof
+459.1 --> 462.4  of stake algorithm that they call Ouroboros.
+462.4 --> 465.4  More about that in this video right here.
+465.4 --> 469.6  So that was it for this video, if you liked it give it a thumbs up and consider getting
+469.6 --> 470.6  subscribed.
+470.6 --> 474.0  Thank you very much for watching and I'll see you in the next video.

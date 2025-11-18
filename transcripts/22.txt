@@ -1,0 +1,147 @@
+0.0 --> 5.2  Hi there, my name is Xavier and as you might know I am a developer, but I'm also a huge
+5.2 --> 11.4  SpaceX fan and that got me thinking, what software and hardware powers the Falcon 9,
+11.4 --> 13.8  Falcon Heavy and Dragon?
+13.8 --> 17.3  Let's first take a look at what challenges the hardware and software of a spacecraft
+17.3 --> 20.9  faces when it is being launched into space.
+20.9 --> 24.9  First of all, it's very hard to get your craft into orbit around the Earth.
+24.9 --> 29.4  A launch on top of a rocket causes a lot of vibrations and that means that the craft
+29.4 --> 33.9  itself and the electronics have to be able to withstand that.
+33.9 --> 38.6  And once you get into orbit, you're welcomed by even more challenges.
+38.6 --> 42.9  Dragon for instance has to be able to cope with intense heat when it's facing the Sun,
+42.9 --> 47.1  but also intense cold when sunlight is being blocked by the Earth.
+47.1 --> 53.4  These temperatures range from minus 150 all the way up to 120 degrees Celsius.
+53.4 --> 57.0  But the biggest problem for the electronics is radiation.
+57.0 --> 62.6  This radiation comes from high energy particles that are ejected by our Sun, particles trapped
+62.6 --> 69.1  in Earth's magnetic field and even cosmic rays or particles from outside our solar system.
+69.1 --> 74.2  These particles can have a pretty severe effect on the systems inside a spacecraft.
+74.2 --> 77.7  One of the biggest problems is what's called a bit flip.
+77.7 --> 83.7  This occurs when a high energy particle hits the memory or the processor of the spacecraft.
+83.7 --> 88.9  If it hits the memory, it can cause a zero to become a one, essentially corrupting a
+88.9 --> 90.5  part of the memory.
+90.5 --> 95.4  Luckily though, the hardware on board SpaceX vehicles can detect these bit flips and fix
+95.4 --> 98.5  the corrupted memory by using parity bits.
+98.5 --> 99.5  No big deal.
+99.5 --> 105.0  However, when the processor is hit with radiation, it can cause the result of a calculation to
+105.0 --> 107.1  be completely incorrect.
+107.1 --> 111.8  To demonstrate this, let's ask a processor to calculate 10 plus 10.
+111.8 --> 117.6  In binary, that would look like this and the result is obviously 20, no surprises there.
+117.6 --> 121.9  But let's now take a look at what happens when a bit flip occurs while performing this
+121.9 --> 123.4  calculation.
+123.4 --> 128.2  We still ask the processor to calculate 10 plus 10, but because of the bit flip, the
+128.2 --> 132.2  processor is actually calculating something completely different.
+132.2 --> 137.0  And right now, it will say that 10 plus 10 equals 24 because one of the bits flipped
+137.0 --> 140.0  while running the calculation.
+140.0 --> 143.8  Some calculations can have pretty severe effects on spacecrafts.
+143.8 --> 149.4  This was demonstrated by the maiden flight of the Ariane 5 rocket in 1996.
+149.4 --> 154.7  It didn't suffer from a bit flip, but 40 seconds into the flight, the rocket's software
+154.7 --> 161.1  tried to boot a 64 bit number into a 16 bit address, causing the number to be truncated
+161.1 --> 163.0  and be completely different.
+163.0 --> 168.0  The rocket's avionics then continued to perform their calculations with this wrong number
+168.2 --> 171.9  and performed an abrupt course correction because it thought it was going the wrong
+171.9 --> 172.9  way.
+172.9 --> 177.9  The vehicle eventually broke up because the aerodynamic stress was simply too high.
+177.9 --> 182.3  Now back to SpaceX, how do they handle the problem of radiation?
+182.3 --> 187.4  Well they assume that you can't protect electronics completely from radiation and they design
+187.4 --> 189.7  their systems with this in mind.
+189.7 --> 196.1  Instead of using expensive radiation hardened parts, SpaceX uses off the shelf components.
+196.1 --> 197.9  Let's look at Dragon first.
+197.9 --> 203.5  According to John Moratori, previous director of SpaceX vehicle certification, each Dragon
+203.5 --> 206.0  is equipped with three flight computers.
+206.0 --> 210.7  Each of these flight computers is powered by a dual core x86 processor.
+210.7 --> 214.3  The computers however don't use this multi core capability.
+214.3 --> 219.6  Instead, they execute each calculation on the two cores individually and then compare
+219.6 --> 221.2  the results.
+221.2 --> 226.3  So three flight computers with each dual core processor can be seen as six independent
+226.3 --> 230.2  computers that are constantly checking each other's calculations.
+230.2 --> 234.9  If one of the flight computers is hit with radiation and produces a wrong calculation,
+234.9 --> 236.8  the others will spot it.
+236.8 --> 241.0  And when that happens, the malfunctioning computer will be rebooted automatically to
+241.0 --> 242.9  prevent further errors.
+242.9 --> 246.5  After rebooting, the computer has to perform what's called a re-sync.
+246.5 --> 251.1  It has to get up to speed with what the vehicle is doing so it copies the memory of the other
+251.1 --> 254.1  two computers and runs the same programs.
+254.1 --> 258.3  A bit like rebooting your computer with the option to restore all your windows when you
+258.3 --> 260.3  log back in.
+260.3 --> 264.9  Dragon can even handle a situation where all three of its flight computers are hit by radiation
+264.9 --> 268.6  at the same time, although that is very unlikely to happen.
+268.6 --> 273.9  Besides three flight computers, Dragon has 18 other systems on board that also use triple
+273.9 --> 275.7  redundancy computers.
+275.7 --> 281.1  And that brings a total amount of processors up to 54 and that is just for a single Dragon
+281.1 --> 282.7  capsule.
+282.7 --> 284.5  The Dragon isn't alone.
+284.5 --> 287.1  Also the Falcon 9 has redundant systems.
+287.1 --> 292.0  It has three computers for each engine and triple redundancy flight computers, which means
+292.0 --> 294.9  that it carries 30 processors.
+294.9 --> 297.7  At least that was the situation in 2012.
+297.7 --> 303.6  Right now it's possible that the Falcon 9 has even more processors to handle the landing.
+303.6 --> 309.2  Now at this point you might be thinking, hang on, does NASA really allow SpaceX to use regular
+309.2 --> 310.8  hardware components?
+310.8 --> 313.4  The ones you and I can buy on Amazon?
+313.4 --> 319.1  Well actually yes, NASA doesn't require the use of radiation hardened components.
+319.1 --> 323.5  Instead they require SpaceX to do extensive research into what effects the radiation
+323.5 --> 325.8  can have on their spacecrafts.
+325.8 --> 329.5  If they know how they'll be affected, they can compensate for it.
+329.5 --> 334.7  In fact, this is called a radiation tolerant design and it is different from a radiation
+334.7 --> 336.5  hardened design.
+336.5 --> 340.4  NASA itself doesn't use radiation hardened parts everywhere.
+340.4 --> 345.1  The International Space Station for instance uses a mix of radiation hardened parts but
+345.1 --> 349.1  they also use regular laptops for some controls.
+349.1 --> 355.1  Even some parts on the space shuttle were radiation tolerant instead of radiation hardened.
+355.1 --> 358.7  But back to SpaceX, how do they select their parts?
+358.7 --> 360.4  While they have two conditions.
+360.4 --> 365.0  First of all the parts have to be capable enough to handle their tasks, pretty obvious.
+365.0 --> 370.9  And secondly, they take into account what tooling is available for that particular part.
+370.9 --> 374.8  Tooling determines what kind of people SpaceX can hire.
+374.8 --> 379.1  Off-the-shelf hardware is pretty generic and uses software and tooling that a lot of developers
+379.1 --> 380.7  already know.
+380.7 --> 385.5  And that means that SpaceX has less trouble finding great engineers.
+385.5 --> 389.8  Radiation hardened parts however only work with special programming languages that few
+389.8 --> 394.2  people know thus limiting the ability to hire new people.
+394.2 --> 398.7  Off-the-shelf hardware is also cheaper and that allows SpaceX to extensively test these
+398.7 --> 399.9  systems.
+399.9 --> 405.1  John Moratori said that at one point over 40 flight computers were sitting on people's
+405.1 --> 407.8  desks for testing and development.
+407.8 --> 411.8  You simply cannot do that with expensive and hard to come by hardware.
+411.8 --> 415.9  But enough about all this hardware, what about the software that controls everything?
+415.9 --> 419.8  While the operating system of choice at SpaceX is Linux.
+419.8 --> 423.7  It runs on the desktops of the engineers and it powers its vehicles.
+423.7 --> 428.6  Using Linux everywhere allows them to streamline the development process and use the robust
+428.6 --> 430.5  tools that come with it.
+430.5 --> 435.5  The programming language of choice is C++ and they use it for two main reasons.
+435.5 --> 441.1  First, it allows SpaceX to hire a lot of brilliant people because the language is still relatively
+441.1 --> 442.3  popular.
+442.3 --> 446.6  And secondly, they benefit from the large C++ ecosystem.
+446.6 --> 451.1  No need to create custom software when you can just use the tools that developers already
+451.1 --> 454.6  know, like GCC and GDB for instance.
+454.6 --> 457.8  But Linux isn't the only platform that is being used.
+457.8 --> 462.9  They also use LabView, a graphical programming tool that runs on Windows.
+462.9 --> 468.7  It is used to visualize telemetry that they get from the Falcon 9 or a dragon during flight.
+468.7 --> 472.9  And ground teams use it to keep an eye on important metrics.
+472.9 --> 477.3  Another interesting fact is that SpaceX tries to share as much code as possible between
+477.3 --> 478.4  its vehicles.
+478.4 --> 483.5  The biggest advantage of this is that bug fixes for one vehicle are automatically pushed
+483.5 --> 485.3  to the other vehicles as well.
+485.3 --> 491.0  Oh, and another interesting fact is that game developers are usually a good fit for SpaceX
+491.0 --> 495.3  because they are used to writing code that runs in environments where memory and processing
+495.3 --> 497.5  power are constrained.
+497.5 --> 503.2  The last thing we'll take a look at is how SpaceX monitors their software and vehicles.
+503.2 --> 507.1  Engineers are encouraged to add metrics to everything they can think about.
+507.1 --> 512.2  Even when a vehicle is being used, all these logs are collected and analyzed by programs
+512.2 --> 516.3  who raise an alarm if something is not within the safety margins.
+516.3 --> 520.4  All these metrics are then stored together with the source code that was running at the
+520.4 --> 521.4  time.
+521.4 --> 526.2  If something goes wrong with the vehicle, SpaceX can recreate the exact environment to
+526.2 --> 529.3  reproduce the problem and fix it.
+529.3 --> 534.0  And finally, they are using continuous integration to automatically test all the code that is
+534.0 --> 536.2  being written by engineers.
+536.2 --> 541.9  They even have test stands with all the components of a Falcon 9 bolted on so they can simulate
+541.9 --> 546.1  a complete flight to discover potential problems.
+546.1 --> 550.7  More details about the used hardware and software aren't really available and that's
+550.7 --> 554.4  because the United States government considers it classified.
+554.4 --> 559.5  A rocket like the Falcon 9 is basically a missile that goes to space, so in the wrong
+559.5 --> 563.8  hands the technology could be misused and cause harm.
+563.8 --> 568.3  But even with limited information, we got a pretty good view at what software and hardware
+568.3 --> 572.9  is being used at SpaceX and what challenges the teams face.
+572.9 --> 576.8  So that was it for this video, if you liked it, hit the thumbs up button and consider
+576.8 --> 578.1  subscribing.
+578.1 --> 582.9  Also follow me on Twitter for more updates and as always, thank you very much for watching.

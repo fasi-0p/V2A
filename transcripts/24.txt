@@ -1,0 +1,107 @@
+0.0 --> 4.5  These days companies are using more and more of our data to improve their products and
+4.5 --> 5.5  services.
+5.5 --> 7.8  And it makes a lot of sense if you think about it.
+7.8 --> 12.4  It's better to measure what your users like than to guess and build products that no one
+12.4 --> 13.6  wants to use.
+13.6 --> 16.4  However, this is also very dangerous.
+16.4 --> 21.6  It undermines our privacy because the collected data can be quite sensitive, causing harm
+21.6 --> 23.2  if it would leak.
+23.2 --> 29.6  So companies love data to improve their products, but we as users, we want to protect our privacy.
+29.6 --> 34.5  These contradicting needs can be satisfied with a technique called differential privacy.
+34.5 --> 38.9  It allows companies to collect information about their users without compromising the
+38.9 --> 41.6  privacy of an individual.
+41.6 --> 45.9  But let's first take a look at why we would go through all this trouble.
+45.9 --> 50.2  Companies can just take our data, remove our names and call it a day, right?
+50.2 --> 52.1  Well not quite.
+52.1 --> 56.7  First of all, this anonymization process usually happens on the servers of the companies
+56.7 --> 58.4  that collect your data.
+58.4 --> 63.4  So you have to trust them to really remove the identifiable records.
+63.4 --> 67.7  And secondly, how anonymous is anonymized data really?
+67.7 --> 72.8  In 2006, Netflix started a competition called the Netflix price.
+72.8 --> 76.7  Competing teams had to create an algorithm that could predict how someone would rate
+76.7 --> 78.0  a movie.
+78.0 --> 83.6  To help with this challenge, Netflix provided a data set containing over 100 million ratings
+83.6 --> 90.7  submitted by over 480,000 users for more than 17,000 movies.
+90.7 --> 95.6  Netflix of course anonymized this data set by removing the names of users and by replacing
+95.6 --> 99.0  some ratings with fake and random ratings.
+99.0 --> 102.4  Even though that sounds pretty anonymous, it actually wasn't.
+102.4 --> 107.6  Two computer scientists from the University of Texas published a paper in 2008 that said
+107.6 --> 112.8  that they had successfully identified people from this data set by combining it with data
+112.8 --> 115.0  from IMDb.
+115.0 --> 119.9  These types of attacks are called linkage attacks and it happens when pieces of seemingly
+119.9 --> 125.2  anonymous data can be combined to reveal real identities.
+125.2 --> 129.8  Another more creepy example would be the case of the governor of Massachusetts.
+129.8 --> 134.8  In the mid 1990s, the state's group insurance commission decided to publish the hospital
+134.8 --> 137.1  visits of state employees.
+137.1 --> 141.7  They anonymized this data by removing names, addresses and other fields that could identify
+141.7 --> 142.7  people.
+142.7 --> 147.5  However, computer scientist Latanya Sweeney decided to show how easy it was to reverse
+147.5 --> 148.5  this.
+148.5 --> 153.3  She combined the published health records with voter registration records and simply reduced
+153.3 --> 154.5  the list.
+154.5 --> 159.0  There was only one person in the medical data that lived in the same zip code, had the same
+159.0 --> 165.4  gender and the same date of birth as the governor, thus exposing his medical records.
+165.4 --> 170.6  In a later paper she noted that 87% of all Americans can be identified with only three
+170.6 --> 175.4  pieces of information, zip code, birthday and gender.
+175.4 --> 176.9  So much for anonymity.
+176.9 --> 181.4  Clearly, this technique isn't enough to protect our privacy.
+181.4 --> 185.5  Differential privacy on the other hand neutralizes these types of attacks.
+185.5 --> 189.5  To explain how it works, let's assume that we want to get a view on how many people do
+189.5 --> 193.6  something embarrassing like for example picking their nose.
+193.6 --> 198.6  To do that, we set up a service with the question do you pick your nose and with the SNO buttons
+198.6 --> 199.9  below it.
+199.9 --> 204.6  We collect all these answers on a server somewhere but instead of sending the real answers, we're
+204.6 --> 207.4  going to introduce some noise.
+207.4 --> 211.2  Let's say that Bob is a nose picker and that he clicks on the yes button.
+211.2 --> 215.3  Before we send his response to the server, our differential privacy algorithm will flip
+215.3 --> 216.3  a coin.
+216.3 --> 220.4  If it's heads, the algorithm sends Bob's real answer to our server.
+220.4 --> 225.4  If it's tails, the algorithm flips a second coin and sends yes if it's tails or no if
+225.4 --> 227.2  it's heads.
+227.2 --> 231.6  Like on our server, we see the data coming in but because of the added noise, we can't
+231.6 --> 234.3  really trust individual records.
+234.3 --> 238.9  Our record for Bob might say that he's a nose picker but there is at least a 1 in 4
+238.9 --> 243.2  chance that he's actually not a nose picker but that the answer was simply the effect
+243.2 --> 247.1  of the coin toss that the algorithm performed.
+247.1 --> 249.2  This is plausible deniability.
+249.2 --> 253.1  You can't be sure of people's answers so you can't judge them on it.
+253.1 --> 257.6  This is particularly interesting if you're collecting data about illegal behavior such
+257.6 --> 259.7  as drug use for instance.
+259.7 --> 264.3  Now because you know how the noise is distributed, you can compensate for it and end up with
+264.3 --> 268.8  a fairly accurate view on how many people are actually nose pickers.
+268.8 --> 273.6  Now of course, the coin toss algorithm is just an example and a bit too simple.
+273.6 --> 279.1  Real world algorithms use the Laplace distribution to spread data over a larger range and increase
+279.1 --> 281.2  the level of anonymity.
+281.2 --> 286.1  In the paper The Algorithmic Foundations of Differential Privacy, it is noted that differential
+286.1 --> 292.4  privacy promises that the outcome of a survey will stay the same whether or not you participate
+292.4 --> 293.4  in it.
+293.4 --> 297.4  Therefore, you don't have any reason not to participate in the survey.
+297.4 --> 301.9  You don't have to fear that your data, in this case your nose picking habits, will be
+301.9 --> 302.9  exposed.
+302.9 --> 308.0  Alright, so now we know what differential privacy is and how it works but let's take
+308.0 --> 310.4  a look at who is already using it.
+310.4 --> 314.3  Apple and Google are two of the biggest companies who are currently using it.
+314.3 --> 319.1  Apple started rolling out differential privacy in iOS 10 and macOS Sierra.
+319.1 --> 323.8  They use it to collect data on what websites are using a lot of power, what images are
+323.8 --> 329.0  used in a certain context and what words people are typing that aren't in the keyboard's
+329.0 --> 330.5  dictionary.
+330.5 --> 335.2  Apple's implementation of differential privacy is documented but not open source.
+335.2 --> 339.1  Google on the other hand has been developing an open source library for this.
+339.1 --> 343.8  They use it in Chrome to do studies on browser malware and in maps to collect data about
+343.8 --> 346.3  traffic in large cities.
+346.3 --> 350.4  But overall there aren't many companies who have adopted differential privacy and those
+350.4 --> 355.1  who have only use it for a small percentage of their data collection.
+355.1 --> 356.3  So why is that?
+356.3 --> 361.0  Well, for starters differential privacy is only usable for large datasets because of
+361.0 --> 363.2  the injected noise.
+363.2 --> 367.3  Using it on a tiny dataset will likely result in inaccurate data.
+367.3 --> 370.2  And then there is also the complexity of implementing it.
+370.2 --> 374.9  It's a lot more difficult to implement differential privacy compared to just reporting the real
+374.9 --> 379.3  data of users and anonymize it in the old fashioned way.
+379.3 --> 383.6  So the bottom line is that differential privacy can help companies to learn more about a group
+383.6 --> 389.0  of users without compromising the privacy of an individual within that group.
+389.0 --> 393.0  Adoption however is still limited but it's clear that there is an increasing need in
+393.0 --> 397.9  ways to collect data about people without compromising their privacy.
+397.9 --> 399.4  So that's it for this video.
+399.4 --> 404.5  If you want to learn more head over to the Simply Explained playlist to watch more videos.
+404.5 --> 406.7  And as always thank you very much for watching.

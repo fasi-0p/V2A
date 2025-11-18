@@ -1,0 +1,66 @@
+0.0 --> 6.4  Every now and then, we hear and read about critical security issues in the software that we use in our day-to-day lives.
+6.4 --> 12.0  These security holes are caused by tiny bugs in the code and can lead to devastating results.
+12.0 --> 17.0  People can hack into your computer, steal your information or even hold it hostage.
+17.0 --> 21.0  Luckily though, we can fix these issues with the software update.
+21.0 --> 29.8  But on the 1st of June 2017, researchers working for Google's Project Zero found two major security flaws in modern processors.
+29.8 --> 34.4  You know, the brains of your computer, phone, tablet, TV and whatnot.
+34.4 --> 39.8  These flaws allows any program to read sensitive information from memory. Yikes!
+39.8 --> 49.8  The bugs are called Maldown and Spectre and because they are so sensitive, Google decided to keep it a secret until vendors had come up with workarounds that would protect us.
+49.8 --> 56.8  So let's take a look at how these bugs work. But before we can do that, let's quickly go over some basic concepts.
+56.8 --> 59.8  As you know, a CPU is the brain of all our devices.
+59.8 --> 65.8  A processor is responsible for executing all the instructions that our operating system and our programs give it.
+65.8 --> 73.8  How fast the processor is depends on its clock speed. The higher this is, the more work your processor can do per second.
+73.8 --> 77.8  So for a while, chip makers were in a fight to keep increasing the clock speed.
+77.8 --> 81.8  They however reached the ceiling when they hit the 3-4 GHz range.
+81.8 --> 90.8  Increasing it further wasn't possible, so instead, chip makers had to get creative and they came up with something called speculative execution.
+90.8 --> 98.8  Basically, it means that the processor will guess what the outcome of an instruction will be and execute all subsequent steps in the background.
+98.8 --> 99.8  More on that later.
+99.8 --> 104.8  The last thing we need to understand is memory. Our devices have two types of memory.
+104.8 --> 109.8  The main system memory, also called RAM, and the cache memory in the processor.
+110.8 --> 114.8  The CPU needs to constantly read and write data from the main memory.
+114.8 --> 123.8  However, the main memory is way slower than the CPU, so chip makers added a small cache on the processor itself to store the data that it's working with.
+123.8 --> 130.8  Every time the processor needs something from the main memory, it copies it, stores it in its cache, and reads it from there.
+130.8 --> 135.8  Ok, so now that we know the basics, we can start explaining the meltdown bug.
+135.8 --> 140.8  Our operating system stores sensitive information in the main memory of our devices.
+140.8 --> 142.8  Think about your Wi-Fi key for instance.
+142.8 --> 150.8  They store this data in protected memory, and CPUs make sure that no one has access to this part of the memory except the operating system itself.
+150.8 --> 157.8  So far so good, except that they don't enforce this rule when they are speculating, and that leaves the door open for exploits.
+157.8 --> 164.8  Let's assume that you visit a website that wants to steal your Wi-Fi password, which for now is safely stored in protected memory.
+164.8 --> 170.8  First, the attacking website has to make sure that your CPU cache doesn't contain your actual Wi-Fi password.
+170.8 --> 174.8  To do that, it reads and writes some random data to the main memory.
+174.8 --> 181.8  Remember that when you access the main memory, the processor keeps a copy of this data in its own cache for faster retrieval.
+181.8 --> 185.8  It also loads an image from the internet that will be used later on.
+185.8 --> 196.8  So now that your CPU's cache is filled with random data, the website tries to read the first letter of your Wi-Fi password from the protected memory with code that might look like this.
+196.8 --> 202.8  If your password starts with the letter S, the site reads the first pixel of the image into memory.
+202.8 --> 207.8  But wait a minute, the CPU will prevent the website from accessing protected memory,
+207.8 --> 214.8  but because the CPU speculates, it might have executed this code in the background and didn't tell us about it.
+214.8 --> 222.8  If your Wi-Fi password indeed starts with the letter S, the CPU will execute a readPixel command while it is speculating.
+222.8 --> 228.8  And when the CPU reads this pixel from the main memory, it puts a copy of it in its own cache.
+228.8 --> 233.8  All the website has to do now is run a second program that times how long it takes to read that pixel.
+233.8 --> 238.8  If it happens super fast, we know that the pixel was in the CPU's cache,
+238.8 --> 245.8  and this could have only happened when the CPU was speculating and only if our password starts with the letter S.
+245.8 --> 251.8  If it's not so fast, then the data comes from the main memory and then we know that the password doesn't start with an S.
+251.8 --> 259.8  It's clear how this technique can be extended to not only read the first character, but to read your full password from protected memory.
+259.8 --> 266.8  In fact, with Meltdown, it's possible to read sensitive data at speeds of up to half a megabyte per second.
+266.8 --> 272.8  Almost all Intel processors and a handful of ARM processors are susceptible to this bug.
+272.8 --> 278.8  Only AMD chips are resilient because they don't speculate when protected memory is being accessed.
+278.8 --> 281.8  However, this is only the tip of the iceberg.
+281.8 --> 289.8  Let's move on to Spectre, a weakness that is very similar to Meltdown but affects all modern CPUs, not just the one from Intel.
+289.8 --> 298.8  While Meltdown only allows programs to read protected memory, Spectre allows malicious programs to read the memory from any other program on your system.
+298.8 --> 307.8  To give a concrete example, a website could use Spectre to read the contents of another browser tab, one where you might be logged into your bank account for instance.
+307.8 --> 311.8  This becomes an even bigger problem in professional situations.
+311.8 --> 319.8  Public Clouds like AWS, Google Cloud and Microsoft Azure are rushing to implement safeguards against Spectre and Meltdown.
+319.8 --> 325.8  If left unpatched, it would allow one customer's virtual machine to steal data from another customer's VM.
+325.8 --> 334.8  Spectre is much more difficult to patch compared to Meltdown and that's also why they named it Spectre, a ghost that will haunt us for quite some time.
+335.8 --> 339.8  Now that we know how the exploits work, what can we do about them?
+339.8 --> 344.8  Patching processors isn't possible because we can't change the hardware that is already shipped.
+344.8 --> 347.8  Instead, we have to mitigate it with software updates.
+347.8 --> 354.8  There are already patches available for Windows, MacOS and Linux, so make sure that you have the latest versions installed.
+354.8 --> 357.8  Mobile devices also need to be patched.
+357.8 --> 362.8  Updates for iOS are already available and also Google has patches available for Android.
+362.8 --> 366.8  However, they depend on manufacturers to make the updates available to the users.
+366.8 --> 370.8  And finally, make sure that the rest of your software is up to date as well.
+370.8 --> 378.8  Browsers like Firefox and Chrome are also offering patches to mitigate the risks of websites stealing your sensitive information.
+378.8 --> 384.8  So that was it for this video, but don't worry, there are plenty of other videos on my channel that you can check out.
+384.8 --> 387.8  And as always, thank you very much for watching.
+392.8 --> 394.8  I hope you enjoyed this video.

@@ -1,0 +1,57 @@
+0.0 --> 4.6  In the past, I made a video explaining how blockchains work and in it I also explained
+4.6 --> 9.9  what mining is. In a nutshell, mining is the process of creating a new block for a blockchain
+9.9 --> 15.5  and filling that block with transactions. But what I didn't explain is the mining difficulty.
+15.5 --> 20.6  To understand what it is, let's look again at the problem that blockchains try to solve,
+20.6 --> 25.2  creating consensus amongst a bunch of computers or notes on the internet.
+25.2 --> 29.8  In the case of a cryptocurrency, that is agreeing about how individual users have
+29.8 --> 35.0  spent their coins. It might not seem like it, but this is a challenging problem to solve.
+35.0 --> 40.2  Notes on this network aren't always honest, and they can appear or disappear whenever they like.
+40.8 --> 46.2  Now imagine you want to join the Bitcoin network. Your computer goes out on the internet and looks
+46.2 --> 51.8  for other notes that are participating. But how does your computer know which one to trust?
+51.8 --> 56.5  Every one of these notes could be trying to game the system and make themselves rich.
+56.5 --> 62.4  The solution proposed by the creator of Bitcoin was simple. The longest valid chain is the one to
+62.4 --> 68.2  pick. But this alone isn't enough. If you are an attacker, you could fabricate a very long chain
+68.2 --> 73.8  with false transactions and everyone will think that yours contains the truth. Yikes.
+73.8 --> 78.8  To solve this problem, Satoshi slowed down the process of creating new blocks with the proof
+78.8 --> 84.6  of work algorithm. This is almost like a lottery where your computer is doing a bunch of random
+84.6 --> 90.9  calculations to try and be the first to solve a cryptographic puzzle. Your chances of solving it
+90.9 --> 96.2  are actually quite low. It's almost like all miners in the world are trying to pick the same
+96.2 --> 102.9  complex lock. Everyone tries a bunch of combinations, but in the end, only one can solve it first.
+102.9 --> 107.6  And when that happens, you have to start all over again to create the next block.
+107.6 --> 112.3  On average, there is one computer every 10 minutes that solves the puzzle and gets the
+112.3 --> 117.9  mining reward for creating a new block. This time delay of 10 minutes makes it impossible to
+117.9 --> 123.2  artificially create the longest chain, because the probability that your computer alone can pick
+123.2 --> 129.7  this lock is highly unlikely. You need many people trying many random combinations to get it done
+129.7 --> 136.4  within the time frame. Awesome. Problem solved. Uh, but hold on. There is one more issue.
+136.4 --> 142.0  Our computers get faster over time, so newer computers could perform more calculations and
+142.0 --> 147.0  potentially create blocks in under 10 minutes, meaning an attacker could purchase a bunch of
+147.0 --> 151.9  really fast computers and try to get ahead of everyone else. Luckily, Satoshi thought of
+151.9 --> 157.5  this as well, and this brings us finally to the mining difficulty. This is a number that controls
+157.5 --> 163.4  how hard your computer has to work to create a new block. And this isn't a fixed number.
+163.4 --> 169.5  It's automatically adjusted every 2016 block. The system looks at how fast these blocks were
+169.5 --> 175.0  created. Normally, they should take exactly two weeks. If more blocks were created in that time
+175.0 --> 181.4  period, the difficulty is increased. And if less blocks were created, the difficulty is reduced.
+181.4 --> 186.8  That seems simple enough, but why would the difficulty have to be adjusted every two weeks?
+186.8 --> 191.7  We don't get massive computer upgrades every two weeks, right? Well, the system also has to
+191.7 --> 196.9  compensate for the amount of people that are mining. More miners mean that there is a higher chance
+196.9 --> 202.2  of someone solving the puzzle in a shorter time frame, which means the difficulty should be increased
+202.2 --> 208.0  to maintain it. And the opposite is true as well. If a lot of people stop mining, the creation of
+208.0 --> 214.0  blocks will be longer, and thus the difficulty has to be reduced. So in summary, the difficulty
+214.0 --> 219.0  adjustment makes sure that mining new blocks always takes around 10 minutes, no matter how
+219.0 --> 224.2  fast our computers are, and no matter how many people are mining. Great system, but it has one
+224.2 --> 230.3  big drawback. It tends to lead to centralization. See, the main reason why people are mining is
+230.3 --> 235.5  because of the profits. As long as your mining operation is profitable, you keep it going.
+235.5 --> 240.4  However, an increase in difficulty could mean that your mining operation now consumes more
+240.4 --> 246.0  electricity than it generates in rewards, at which point you're forced to stop your mining
+246.0 --> 252.2  operation. And this means that only bigger miners remain active because they have economies of scale.
+252.2 --> 258.5  In the case of Bitcoin, we see a few big mining farms and mining pools taking a significant portion
+258.5 --> 263.5  of this mining market. Not only does this centralize a technology that was meant to be completely
+263.5 --> 268.8  distributed, but it also opens the door for these large mining farms to run attacks against the
+268.8 --> 274.2  network. Solutions for this problem are being discussed though, but that's for another video.
+274.2 --> 279.4  Fun side fact, if you're a developer like me, you might be thinking that this Satoshi guy is
+279.4 --> 284.7  brilliant because he thought of all of this, but he's not perfect and also makes mistakes.
+284.7 --> 291.3  There's a small bug in the difficulty adjustment code of Bitcoin. After 2016 blocks, the difficulty
+291.3 --> 298.6  is recalculated, but the code only looks at the first 2015 blocks. So if all blocks took exactly
+298.6 --> 304.5  10 minutes to mine and the last block took 100 days to mine, it wouldn't affect the difficulty at all.
+305.8 --> 311.8  What a rookie mistake. So don't feel too bad about your own coding skills. Thank you so much
+311.8 --> 316.5  for watching and as always, subscribe if you liked this video. Until next time.

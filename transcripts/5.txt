@@ -1,0 +1,46 @@
+0.0 --> 6.5  Developing vaccines is usually a very lengthy process, taking on average 8 years to get approved.
+6.5 --> 12.5  Since a few years we have the ability to create mRNA vaccines, which can be developed much faster.
+12.5 --> 18.2  So how do these vaccines work? Are they safe and how do they compare to traditional ones?
+18.2 --> 23.0  But first you must understand how the immune system works. When a virus enters your body,
+23.0 --> 29.2  it will attach itself to one of your cells and inject its DNA or RNA into it. This is like a
+29.2 --> 34.9  blueprint for your cells, containing instructions on what the cell has to make. So in this case,
+34.9 --> 41.0  the viruses RNA will tell your cell to make more copies of the same virus. They become
+41.0 --> 45.9  factories, assembling new copies of the virus that can infect even more cells.
+45.9 --> 51.2  But don't worry, our bodies have a defense system for foreign intruders. The immune system
+51.2 --> 57.3  attacks any protein, virus or bacteria that does not belong in our bodies. But it takes a few days
+57.6 --> 63.3  to learn how to attack the intruder. Meanwhile, the virus factories are running non-stop,
+63.3 --> 68.1  quickly replicating the virus and spreading it in your body. In other words, you start
+68.1 --> 73.5  experiencing symptoms of whatever has infected you. After a few days, however, your immune system
+73.5 --> 78.9  will have figured out how to attack the virus and will start producing antibodies. These attach
+78.9 --> 84.1  themselves to the virus, preventing them from infecting more cells and marking them for destruction.
+84.6 --> 89.7  As you can see, the immune system is remarkable, but it's slow to mount an attack.
+89.7 --> 94.8  That is the reason why we can get sick in the first place. So to give it a helping hand,
+94.8 --> 100.8  we developed vaccines. The main idea is to train your immune system to recognize and fight off an
+100.8 --> 107.0  infection before it has occurred. Almost like showing your immune system a mugshot of the virus
+107.0 --> 112.6  and saying, if you see this, kill it. There are various types of vaccines, but let's take a look
+112.6 --> 119.2  at the new kit on the block, mRNA vaccines. To understand how they work, let's take the COVID-19
+119.2 --> 124.8  pandemic as an example. You might have seen pictures of the virus with its distinctive spikes.
+124.8 --> 130.6  These spikes allow the virus to attach to specific cells in your body and infect them.
+130.6 --> 136.2  Now, here's the key idea for the COVID-19 vaccine. What if we could train our immune system to
+136.2 --> 142.3  recognize these spikes by having our own bodies produce them? To do that, researchers took the
+142.3 --> 148.2  virus's blueprint, its RNA, and isolated the part responsible for producing the spikes.
+148.2 --> 155.0  Armed with this blueprint, they created mRNA, or messenger RNA. This is a special form of RNA that
+155.0 --> 161.0  can enter your cells and give them instructions. In this case, the RNA contains instructions to
+161.0 --> 168.2  build the spikes of the coronavirus, not the virus itself, just the spikes. So mRNA vaccines
+168.2 --> 174.2  contain instructions for your cells that tell them to build a part of a virus in large volumes,
+174.2 --> 179.4  almost like giving them a recipe to follow. Once this is happening, your immune system kicks into
+179.4 --> 184.7  action and starts learning how to attack these intruders. Again, it takes some time for the
+184.7 --> 190.0  immune system to fight off these spikes, but you won't get sick because it's only the spikes,
+190.0 --> 195.8  not the virus itself. And that's it. Your immune system has learned how to attack the spikes of
+195.8 --> 201.8  the coronavirus. It destroys all the spikes and even breaks down the mRNA vaccine itself.
+201.8 --> 208.3  The only thing left in your body are special B cells or memory cells. These can linger around for
+208.3 --> 214.0  months or years until the same virus infects you again. When that happens, the B cells can produce
+214.0 --> 219.4  the correct antibodies right away, preventing the virus from spreading and making you sick.
+219.4 --> 224.6  What's interesting about this mRNA technique is that it's relatively quick to develop a vaccine
+224.6 --> 230.8  as soon as we know the DNA or RNA sequence of a virus. And secondly, because the vaccine only
+230.8 --> 236.4  makes our bodies produce a tiny part of a virus, we cannot get sick from it. More traditional
+236.4 --> 242.1  vaccines use weakened versions of the actual virus. This also triggers an immune response,
+242.1 --> 247.7  but could also give you mild symptoms. Now you know how mRNA vaccines work,
+247.7 --> 253.2  but don't take my word for it. All sources used to make this video are listed in the description
+253.2 --> 258.6  below. Check it out if you want a more in-depth explanation. Give this video a thumbs up if
+258.6 --> 264.2  you found it interesting and consider subscribing to the channel. Thanks for watching and till next time.

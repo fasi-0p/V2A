@@ -1,0 +1,110 @@
+0.0 --> 2.8  Serverless cloud products are all the rage right now.
+2.8 --> 7.2  You have serverless computing, serverless databases, serverless storage, serverless messaging,
+7.2 --> 8.2  and much more.
+8.2 --> 11.6  What's this hype all about and is it justified?
+11.6 --> 13.8  But first, what's a server?
+13.8 --> 19.2  A server is basically a computer designed to run 24-7 and provide services to other
+19.2 --> 21.1  people on a network.
+21.1 --> 26.2  If you've been using the internet in any way, you've interacted with hundreds of servers.
+26.2 --> 30.8  Web servers that send you web pages, mail servers for communication, file servers to
+30.8 --> 35.7  store your files, game servers for entertainment, and so on and so on.
+35.7 --> 40.2  This is what a server looks like and they are designed to be fast, have a lot of memory,
+40.2 --> 42.7  and a very speedy internet connection.
+42.7 --> 47.5  They're usually housed in massive data centers like this one from Google.
+47.5 --> 51.4  The problem with servers, however, is that they're not flexible.
+51.4 --> 56.1  Hosting your own website on your own server is cool, but if you only have a handful of
+56.1 --> 60.5  visitors each day, your server will be idle most of the time.
+60.5 --> 62.7  This is called over provisioning.
+62.7 --> 67.6  You're paying for a server that has a certain capacity, but you're not using it, so most
+67.6 --> 69.7  of it goes to waste.
+69.7 --> 73.0  The opposite of this is called under provisioning.
+73.0 --> 77.6  Your server gets overwhelmed by many visitors trying to load it at once.
+77.6 --> 81.1  The server will run out of capacity and then crash.
+81.1 --> 86.7  Predicting how many resources you will need to run an online service is almost impossible.
+86.7 --> 92.4  Any service could turn into an overnight success, or it might grow slowly for many years.
+92.4 --> 97.2  If you under anticipate the traffic, your service will be slow or go down.
+97.2 --> 101.5  Overestimate and the server costs will burn a hole in your pocket.
+101.5 --> 105.9  And aside from scaling, servers also require a lot of maintenance.
+105.9 --> 109.8  You have to update software, replace failed hardware, make sure they have a reliable
+109.8 --> 112.3  internet connection and so on.
+112.3 --> 117.3  All of this means you can focus less on developing your website or service.
+117.3 --> 121.9  To solve these issues, cloud providers introduced serverless products.
+121.9 --> 127.5  They allow you to run an online service without having to worry about servers or other underlying
+127.5 --> 128.7  infrastructure.
+128.7 --> 132.2  This leaves you to focus entirely on your application.
+132.2 --> 134.3  Want to create a file sharing service?
+134.3 --> 138.5  Use a serverless storage product and you can store millions of files without having to
+138.5 --> 141.6  worry about having enough hard drives to store them.
+141.6 --> 143.5  Want to keep track of your sales?
+143.5 --> 148.9  Use a serverless database and you'll be able to store, create and fetch millions of records
+148.9 --> 151.2  every second if needed.
+151.2 --> 154.3  There are three main benefits to serverless products.
+154.3 --> 160.1  You only pay for what you use, they easily scale up and down and you don't have to manage
+160.1 --> 161.1  servers.
+161.1 --> 163.2  Let's go over these in more detail.
+163.2 --> 167.5  First up, serverless products charge you for your actual usage.
+167.5 --> 172.8  For instance, per gigabyte of stored data or per 100 milliseconds that your code is
+172.8 --> 174.2  running.
+174.2 --> 179.0  That's advantageous when you're not using the same amount of resources all the time.
+179.0 --> 181.0  And that's quite common.
+181.0 --> 186.0  Websites usually see ups and downs in traffic depending on who your website is targeting.
+186.0 --> 191.3  A business oriented website might see a lot of traffic during business hours but almost
+191.3 --> 193.1  none at night.
+193.1 --> 197.9  When using regular servers, you would have a fixed cost throughout the day, regardless
+197.9 --> 201.1  of whether you have a lot of traffic or not.
+201.1 --> 203.5  Another benefit is scalability.
+203.5 --> 206.8  Serverless products are built to cope with huge demands.
+206.8 --> 210.5  Hosting a small website with just a handful of visitors is fine.
+210.5 --> 215.3  But if your website suddenly starts to get millions of visitors, then that's fine as
+215.3 --> 216.3  well.
+216.3 --> 220.9  Behind the scenes, the cloud provider will allocate more servers to your website and
+220.9 --> 224.6  as traffic goes down, so will the number of servers.
+224.6 --> 228.0  In fact, that's how my website is hosted on AWS.
+228.0 --> 230.7  They take care of all the details for me.
+230.7 --> 234.9  All I have to do is upload my website and I'm off the hook.
+234.9 --> 238.3  Hosting your own server makes this much more complicated.
+238.3 --> 243.1  Increasing capacity means buying more servers and then configuring a load balancer to balance
+243.1 --> 246.2  visitors across two or more servers.
+246.2 --> 248.9  Much more challenging and time consuming.
+248.9 --> 254.4  So in a nutshell, with serverless, you never have too little or too much capacity.
+254.4 --> 256.4  It's always just right.
+256.4 --> 259.4  The last benefit is something that I mentioned a few times now.
+259.4 --> 261.8  You don't have to manage servers.
+261.8 --> 266.1  That includes not having to buy equipment, not worrying about having the latest security
+266.1 --> 271.9  patches installed, no hassle when hard drives die and most importantly, no growing pains
+271.9 --> 275.3  when your site or service sees a spike in traffic.
+275.3 --> 280.1  You also don't have to worry about upgrading or replacing your equipment at the end of
+280.1 --> 285.0  their lifespan, which for servers is every three to five years.
+285.0 --> 289.4  Now I might sound like a fanboy here, but there are downsides as well.
+289.4 --> 294.2  For starters, because serverless products scale so easily and they only charge you for what
+294.2 --> 299.2  you use, it can be tricky to estimate how much you will have to pay.
+299.2 --> 304.7  Also, every serverless product has a certain amount of features that are all priced differently.
+304.7 --> 309.6  In that sense, renting or buying traditional servers is much more predictable.
+309.6 --> 315.3  For a given price, you will get a certain amount of server capacity, no more, no less.
+315.3 --> 320.5  Another downside is that each cloud provider has its own specific serverless products and
+320.5 --> 325.6  they aren't necessarily compatible with one another, meaning you risk getting locked
+325.6 --> 327.6  in by the cloud provider.
+327.6 --> 331.9  If you don't pay attention to this, you will become very dependent on them and switching
+331.9 --> 336.6  to another provider might become a huge and expensive effort.
+336.6 --> 339.1  Serverless databases are a great example.
+339.1 --> 344.1  All cloud providers have them, but all of them support different sets of features.
+344.1 --> 348.8  When you then depend on such a feature, it might be impossible to move to a competitor
+348.8 --> 352.1  without re-architecting your site or service.
+352.1 --> 356.8  In fact, serverless products are probably the best way for cloud providers to tie you
+356.8 --> 358.4  to their platforms.
+358.5 --> 365.3  However, tools and techniques exist to overcome this challenge and build cloud agnostic applications.
+365.3 --> 369.3  And finally, serverless isn't a solution for just about everything.
+369.3 --> 374.6  To give a few examples, serverless databases often pose limits on how you can query your
+374.6 --> 376.1  data.
+376.1 --> 380.9  Serverless compute products limit how long your code can run to just a few minutes.
+380.9 --> 386.0  And sometimes serverless products are just slower because they are dynamically changing
+386.0 --> 389.9  the capacity allocated to your website or application.
+389.9 --> 395.1  That being said, new products are frequently announced and existing ones are getting better.
+395.1 --> 398.9  Just be aware of some of these limitations and drawbacks.
+398.9 --> 405.7  Now before ending, I just want to say that serverless is actually a bit of false advertising.
+405.7 --> 408.6  Serverless doesn't mean no servers.
+408.6 --> 411.5  It's just that you don't have to worry about them anymore.
+411.5 --> 415.3  But the cloud providers still have hundreds of thousands of them.
+415.3 --> 419.8  In the same way, the term wireless is equally misleading.
+419.8 --> 423.9  Thanks for watching this video, subscribe if you found it interesting and I hope to see
+423.9 --> 424.7  you next time.

@@ -1,0 +1,45 @@
+0.0 --> 6.1  So I recently got into paradoxes and this particular one caught my eye. It goes like this.
+6.1 --> 13.5  Gains in efficiency result in increased consumption. This is Jevons paradox, named after the English
+13.5 --> 21.2  economist William Stanley Jevons. In 1865 he noted that the improved efficiency of steam engines
+21.2 --> 26.9  didn't decrease the consumption of coal. Instead coal was used in more industries,
+26.9 --> 32.6  increasing total consumption, which made him worry that England would run out of coal faster
+32.6 --> 39.5  because it was used more efficiently. A more modern example would be the fuel efficiency of cars.
+39.5 --> 45.1  This has increased a lot in recent years and yet the total consumption of fuel keeps rising.
+45.1 --> 50.2  The same thing goes for electricity. Appliances are getting more efficient and yet the total
+50.2 --> 56.0  electricity consumption still rises. I was initially confused about this, but I made a
+56.0 --> 60.2  mistake to think that the demand would stay the same, which it doesn't.
+61.0 --> 66.3  See, when something becomes more efficient it usually becomes cheaper and we can afford to
+66.3 --> 72.5  use it more often. Take our cars again as an example. They have gotten a lot more efficient,
+72.5 --> 80.3  but it could be that a 5% fuel efficiency gain only reduces consumption by 2%. The remaining 3%
+80.3 --> 85.8  can be attributed to the fact that when driving gets cheaper we can afford to drive faster or
+85.8 --> 91.5  further than before. The difference between the theoretical efficiency gains and the actual
+91.5 --> 97.3  consumption is called the rebound effect. In this example the rebound effect is 60%.
+98.2 --> 106.2  We expected a reduction of 5%, but instead only saw 2%. Now, Jeffins paradox only applies when
+106.2 --> 113.4  the rebound effect is higher than 100%, meaning gains in efficiency have caused an overall increase
+113.4 --> 120.8  in consumption. A rebound effect between 0% and 100% is known as take back and this is the most
+120.8 --> 126.7  occurring. It means that the actual consumption is reduced, but not as much as expected.
+127.5 --> 133.4  A negative rebound effect is also possible. This means that the savings were higher than expected.
+134.1 --> 140.1  When would that occur? Well, imagine you bought a dishwasher that's 10% more efficient and by
+140.1 --> 146.1  doing that you realize how much energy it consumes and you start washing less frequently
+146.1 --> 151.8  or at lower temperatures. The Jeffins paradox and the rebound effect can be found in a lot of
+151.8 --> 157.9  different areas, not just energy consumption. It also plays a role in greenhouse gas emissions,
+157.9 --> 165.4  environmental impact and even water consumption. Now, why make a video about this paradox?
+165.4 --> 169.9  While understanding Jeffins paradox allows us to question the policy of governments.
+170.6 --> 175.7  The EU for instance has adopted a lot of policies to improve energy efficiency,
+175.7 --> 181.8  such as the manage energy initiative, which aims to increase energy efficiency. But as I mentioned
+181.8 --> 188.9  before, chasing efficiency can have the opposite effect on the total consumption. In fact, a 2007
+188.9 --> 195.4  study said that Jeffins paradox likely exists in 18 European countries and even suggested that
+195.4 --> 200.8  the paradox isn't applicable to just a few sectors, but to an economy as a whole.
+201.8 --> 207.5  Now, I'm not proposing that we should stop chasing efficiency, far from it, but Jeffins paradox is
+207.5 --> 213.6  often ignored and some people wonder if we should try to increase efficiency while trying to reduce
+213.6 --> 219.8  demand at the same time. See, when cars get more efficient and cheaper to drive, a government could
+219.8 --> 226.1  introduce a green tax that matches the savings. This will prevent people from driving further or
+226.1 --> 233.0  faster. This is proposed by ecological economists and these taxes could be used to reinvest in other
+233.0 --> 238.8  measures. Now, aside from politics, it's also worth pointing out that the strength of the rebound
+238.8 --> 245.6  effect depends on how mature a market is. In developed countries, an increased fuel efficiency
+245.6 --> 252.0  won't cause a high rebound effect because we already consume a lot of fuel and we won't necessarily
+252.0 --> 257.8  drive our cars more often. The University of California even found a link between the rebound
+257.8 --> 264.3  effect and income. Higher income means a weaker rebound effect. But that's enough about Jeffins
+264.3 --> 271.0  paradox. Here's another cool one, the Downs-Thomson paradox, which says that increasing road capacity
+271.0 --> 277.2  can make traffic congestion worse. Let that sink in while you hit the like button and get subscribed
+277.2 --> 281.7  to my channel. Thanks for watching and see you next time.

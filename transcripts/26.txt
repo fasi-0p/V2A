@@ -1,0 +1,71 @@
+0.0 --> 5.6  When Bitcoin was first released to the world in 2012, it started a revolution.
+5.6 --> 11.4  People claimed that the blockchain would solve many problems and that it has countless of applications.
+11.4 --> 17.4  Blockchains indeed have very interesting properties and you can learn all about them in this video here.
+17.4 --> 22.9  However, they have one big limitation and that is that they don't scale very well.
+22.9 --> 27.6  This is exactly the kind of problem that the creators of IOTA wanted to solve.
+27.7 --> 32.9  Instead of using a blockchain, IOTA uses something called a DAG or Tangle.
+32.9 --> 40.8  DAG is short for directed acyclic graph and it is a storage system where individual items link to each other.
+40.8 --> 45.6  Directed means that the link between these items always have a direction
+45.6 --> 50.4  and acyclic means that you cannot create loops inside the structure.
+50.4 --> 54.2  This might sound complicated, so let's take a look at a simple Tangle.
+54.2 --> 59.1  Each square represents a single transaction and is also called a site.
+59.1 --> 62.6  Each site contains all the details about the transaction,
+62.6 --> 67.5  such as the sender, the receiver and the amount of coins that was transferred.
+67.5 --> 71.0  It also has a connection to at least two other transactions.
+71.0 --> 75.2  These are called edges and they validate the transactions.
+75.2 --> 77.7  Here is an example of a bigger Tangle.
+77.7 --> 84.0  Near the end of our Tangle, we find a few transactions that don't have two or more incoming edges.
+84.0 --> 86.9  This means that these transactions are unconfirmed.
+86.9 --> 89.8  We also call these the tips of the Tangle.
+89.8 --> 93.3  Alright, now that we understand some of the IOTA terminology,
+93.3 --> 97.4  let's take a look at how we can add a transaction to the Tangle.
+97.4 --> 101.8  We have to attach our new transaction to one of the tips of the Tangle.
+101.8 --> 107.8  An algorithm selects two of them at random and makes sure that the transactions don't conflict with one another.
+107.8 --> 113.2  If one of the tips is a fake transaction, it is ignored and a new tip is selected.
+113.2 --> 117.5  If everything checks out, we attach our transaction to the two tips.
+117.5 --> 122.3  This adds our transaction to the Tangle and verifies two other transactions.
+122.3 --> 126.5  And our transaction now becomes a new tip of the Tangle.
+126.5 --> 130.1  This technique makes IOTA's Tangle incredibly scalable.
+130.1 --> 135.1  For every transaction that is added to the Tangle, two others are being confirmed.
+135.1 --> 139.2  This means that the network doesn't slow down when there are a lot of transactions.
+139.2 --> 142.2  In fact, it actually speeds up.
+142.2 --> 147.2  Now, that's all great, but how can we know we can trust a transaction?
+147.2 --> 151.8  In traditional blockchains, people often use the number of confirmations
+151.8 --> 155.1  to check whether or not a block should be trusted.
+155.1 --> 159.8  While IOTA has a similar technique, each site has a weight.
+159.8 --> 164.9  This number signifies the amount of work that a node has done to make this transaction.
+164.9 --> 172.1  In other words, a higher number means that the node spent more time doing the proof of work for that transaction.
+172.2 --> 175.6  Each transaction also has a cumulative weight.
+175.6 --> 182.1  This is a sum of its own weight plus the sum of the weights of all transactions that approve this transaction.
+182.1 --> 185.0  It seems quite complicated, but it really isn't.
+185.0 --> 189.8  Here is an example of a Tangle where every transaction has a weight of one.
+189.8 --> 195.1  We'll put the weight of an individual transaction in the bottom right of each square.
+195.1 --> 201.7  Now, let's check how trustworthy this pink transaction is by calculating its cumulative weight.
+201.7 --> 206.5  To do that, we sum up the weight of the two transactions that have approved it.
+206.5 --> 210.5  But those transactions were approved by other transactions as well.
+210.5 --> 215.5  So we keep summing up all of these weights until we get to the end of the Tangle.
+215.5 --> 219.7  In this case, the cumulative weight of the site is 6.
+219.7 --> 226.2  Transactions with a high cumulative weight are usually older and have more direct or indirect verifications,
+226.2 --> 229.3  so we can trust those transactions more than others.
+229.3 --> 236.5  So now you know what IOTA's Tangle is and how it works, but how does it stack up against traditional blockchains?
+236.5 --> 241.5  Well, the Tangle solves two big issues, scalability and miners.
+241.5 --> 243.5  Let's discuss scalability.
+243.5 --> 248.2  As we've seen, IOTA's network becomes faster when more transactions happen.
+248.2 --> 253.1  This means that IOTA can handle almost an unlimited amount of transactions per second,
+253.1 --> 256.8  while traditional blockchains can only handle a few.
+256.8 --> 262.4  But there is another aspect to scalability that most people seem to forget and that is storage.
+262.4 --> 268.3  In a blockchain, you need a full copy of the chain before you can start adding new transactions.
+268.3 --> 275.3  Right now, the Bitcoin blockchain is almost 150 GB in size and keeps growing very fast.
+275.3 --> 281.5  Storing all this data is not something that every device can do and it will get harder over time.
+281.5 --> 284.3  IOTA's Tangle is much more lightweight.
+284.3 --> 288.0  You don't need a full copy of the Tangle to add transactions.
+288.0 --> 292.7  You only need a small part of the Tangle to create and verify transactions.
+292.7 --> 295.5  This makes it much more future-proof.
+295.5 --> 298.6  And finally, IOTA has no miners.
+298.6 --> 303.0  Usually, miners are there to create blocks and validate transactions.
+303.0 --> 307.1  For this hard work, miners take a fee from each transaction.
+307.1 --> 310.2  In IOTA, no miners means no fees.
+310.2 --> 314.0  Sending money around is thus completely free.
+314.0 --> 320.2  So now you know how IOTA's Tangle works and how it compares to regular blockchain technology.
+320.2 --> 324.8  If you like this video, please give it a thumbs up and get subscribed to my channel.
+324.8 --> 328.8  Thank you very much for watching and I'll see you in the next video.

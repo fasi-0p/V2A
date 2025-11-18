@@ -1,0 +1,39 @@
+0.0 --> 5.2  NFT stands for non-fungible token. Non-fungible means that something cannot be exchanged for
+5.2 --> 10.4  another item because it is unique. For instance, one piece of art is not equal to another.
+10.4 --> 15.9  Both have unique properties. Fungible items on the other hand can be exchanged for one another.
+15.9 --> 19.4  For instance, one dollar or bitcoin is always equal to another.
+19.9 --> 25.7  Okay, but what is an NFT? NFTs are tokens that live on a blockchain and represent ownership
+26.2 --> 31.3  of unique items. Why is that helpful? Well, tracking who owns a digital file is tricky
+31.3 --> 35.8  because it can be copied and distributed effortlessly. So how can you prove who's the
+35.8 --> 40.3  original owner when everyone has an identical copy of the file?
+40.3 --> 46.2  NFTs solve this problem. Imagine that you made a piece of digital art, essentially a JPEG on
+46.2 --> 52.1  your computer. You can create or mint an NFT out of this. The NFT that represents your art
+52.1 --> 56.6  contains a bit of information about it, such as a unique fingerprint of the file,
+56.6 --> 62.6  a token name and a symbol. This token is then stored onto a blockchain and you, the artist,
+62.6 --> 67.9  become the owner. Now you can sell that token by creating a transaction on the blockchain.
+67.9 --> 72.6  The blockchain makes sure that this information can never be tampered with. It also allows you
+72.6 --> 77.3  to track who is the current owner of a token and for how much it has been sold in the past.
+77.9 --> 83.3  It's important to note that the artwork itself is not stored within the NFT or the blockchain.
+83.3 --> 86.7  Only its attributes such as the fingerprint or hash of the file,
+86.7 --> 92.7  a token name and symbol and optionally a link to a file hosted on IPFS.
+92.7 --> 98.7  More about that in this video here. Now here's where NFTs become weird. When you buy an NFT that
+98.7 --> 103.9  represents artwork, you don't get a physical copy of it. Heck, most of the time everyone
+103.9 --> 109.8  can download a copy for free. The NFT only represents ownership and that is recorded in a
+109.8 --> 115.9  blockchain so nobody can tamper with it. Some say that NFTs give you digital bragging rights.
+115.9 --> 122.2  And to make it even weirder, while the token owner owns the original artwork, the creator of the NFT
+122.2 --> 127.8  retains the copyright and the reproduction rights. So an artist can sell his original artwork as an
+127.8 --> 134.8  NFT but he can still sell prints. Now aside from digital art, NFTs can also be used to sell concert
+134.8 --> 141.1  tickets, domain names, rare in-game items, real estate and basically anything that is unique
+141.1 --> 148.0  and needs proof of ownership. For example, the founder of Twitter sold his first tweet as an NFT.
+148.0 --> 153.9  Anyone can see that tweet on his profile but now only one person can own it and that person paid
+153.9 --> 160.1  over 2.9 million dollars for it. I could even make an NFT out of this video. You could then buy it
+160.1 --> 165.8  and be the owner of this video even though it is free to watch for everyone. Now why are some NFTs
+165.8 --> 171.0  worth millions? Well their worth is determined by what people are willing to pay for it. If I'm
+171.0 --> 176.6  willing to pay 100 dollars for a particular NFT then it's worth 100 dollars. Prices are driven
+176.6 --> 181.8  by demand so be careful. An expensive NFT becomes worthless if nobody wants to buy it.
+182.4 --> 188.3  Okay one more thing before we end. How do they work technically? NFTs are essentially smart
+188.3 --> 193.2  contracts that live on a blockchain. In this case the contract stores the unique properties of the
+193.2 --> 199.6  item and keeps track of current and previous owners. An NFT can even be programmed to give royalties
+199.6 --> 206.5  to the creator every time it exchanges hands. So there you have it. NFTs explained in under 4 minutes.
+206.5 --> 210.7  I hope you found this interesting and if you did consider subscribing to this channel.
+210.7 --> 216.3  Thanks for watching and till next time.

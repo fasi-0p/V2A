@@ -1,0 +1,61 @@
+0.0 --> 3.4  Smart contracts are very popular nowadays.
+3.4 --> 6.7  But what are they and what problems do they solve?
+6.7 --> 12.6  The term smart contract was first used by Nick Sabo in 1997 long before Bitcoin was
+12.6 --> 13.6  created.
+13.6 --> 19.2  He is a computer scientist, law scholar and cryptographer so I'll spare you his exact
+19.2 --> 20.2  words.
+20.2 --> 26.0  But in simple terms, he wanted to use a distributed ledger to store contracts.
+26.0 --> 30.0  Now smart contracts are just like contracts in the real world.
+30.0 --> 33.4  The only difference is that they are completely digital.
+33.4 --> 38.7  In fact, a smart contract is actually a tiny computer program that is stored inside of
+38.7 --> 39.7  a blockchain.
+39.7 --> 45.2  Let's take a look at an example to understand how smart contracts work.
+45.2 --> 50.2  You probably are familiar with Kickstarter, the large fundraising platform.
+50.2 --> 55.6  Product teams can go to Kickstarter, create a project, set a funding goal and start collecting
+55.6 --> 59.6  money from others who believe in the idea.
+59.6 --> 65.0  Kickstarter is essentially a third party that sits in between product teams and supporters.
+65.0 --> 70.1  This means that both of them need to trust Kickstarter to handle their money correctly.
+70.1 --> 75.0  If the project gets successfully funded, the project team expects Kickstarter to give them
+75.0 --> 76.2  their money.
+76.2 --> 81.7  On the other hand, supporters want their money to go to the project if it was funded, or
+81.7 --> 85.5  to get a refund when it hasn't reached its goals.
+85.5 --> 90.8  Both the product team and its supporters have to trust Kickstarter, but with smart contracts,
+90.8 --> 97.1  we can build a similar system that doesn't require a third party like Kickstarter.
+97.1 --> 99.5  So let's create a smart contract for this.
+99.5 --> 104.3  We can program the smart contract so that it holds all the received funds until a certain
+104.3 --> 106.1  goal is reached.
+106.1 --> 111.7  The supporters of a project can now transfer their money to the smart contract.
+111.7 --> 117.0  If the project gets fully funded, the contract automatically passes the money to the creator
+117.0 --> 118.9  of the project.
+118.9 --> 123.5  And if the project fails to meet these goals, then the money automatically goes back to
+123.5 --> 125.0  the supporters.
+125.0 --> 126.3  Pretty awesome, right?
+126.3 --> 132.2  And because smart contracts are stored inside a blockchain, everything is completely distributed.
+132.2 --> 136.0  With this technique, no one is in control of the money.
+136.0 --> 139.8  But wait a minute, why should we trust a smart contract?
+139.8 --> 144.6  Well because smart contracts are stored on a blockchain, they inherit some interesting
+144.6 --> 145.8  properties.
+145.8 --> 149.1  They are immutable and they are distributed.
+149.1 --> 155.2  Being immutable means that once a smart contract is created, it can never be changed again.
+155.2 --> 160.2  So no one can go behind your back and tamper with the code of your contract.
+160.2 --> 165.1  And being distributed means that the output of your contract is validated by everyone
+165.1 --> 166.7  on the network.
+166.7 --> 171.4  So a single person cannot force the contract to release the funds because other people
+171.4 --> 176.0  on the network will spot this attempt and mark it as invalid.
+176.0 --> 180.4  Tampering with smart contracts becomes almost impossible.
+180.4 --> 185.3  Smart contracts can be applied to many different things, not just on crowdfunding.
+185.3 --> 190.6  Banks for example could use it to issue loans or to offer automatic payments.
+190.6 --> 193.9  Insurance companies could use it to process certain claims.
+193.9 --> 199.2  And postal companies could use it for payment on delivery and so on and so on.
+199.2 --> 203.6  So now you might wonder, where and how can I use smart contracts?
+203.6 --> 208.9  Well right now there are a handful of blockchains who support smart contracts, but the biggest
+208.9 --> 211.4  one is Ethereum.
+211.4 --> 216.8  It was specifically created and designed to support smart contracts.
+216.8 --> 221.2  Smart contracts can be programmed in a special programming language called Solidity.
+221.2 --> 226.1  This language was specifically created for Ethereum and uses a syntax that resembles
+226.1 --> 227.1  JavaScript.
+227.1 --> 232.6  It's also worth noting that Bitcoin also has support for smart contracts, although
+232.6 --> 236.2  it's a lot more limited compared to Ethereum.
+236.2 --> 240.5  So now you know what smart contracts are and what problems they solve.
+240.5 --> 245.3  I hope you enjoyed this video and if you did, hit the like button and get subscribed.
+245.3 --> 247.5  And as always, thank you very much for watching.

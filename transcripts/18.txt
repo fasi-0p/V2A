@@ -1,0 +1,92 @@
+0.0 --> 8.6  In recent years, social media networks have grown exponentially, with Facebook having a massive 2.3 billion active monthly users.
+8.6 --> 13.3  However, platforms like Twitter and Facebook have also faced a lot of controversy,
+13.3 --> 20.0  and without getting too much into the details, I want to highlight just one in this video, centralization.
+20.0 --> 25.8  When we're using Facebook or Twitter, we are effectively trusting a single company with all of our data.
+26.0 --> 31.0  And not just that, they also control what posts are allowed on their platforms.
+31.0 --> 37.0  If yours don't follow the rules, your account can be shut down, and there's nothing you can do about that.
+37.0 --> 39.0  So how can we solve this?
+39.0 --> 46.3  Well, we could make social media more decentralized, and that brings us to the main topic of the video, Mastodon,
+46.3 --> 51.0  an open source project that wants to put social networking back into your hands.
+51.0 --> 53.5  At least that's what the tagline says.
+53.5 --> 56.8  In a nutshell, Mastodon is basically like Twitter.
+56.8 --> 63.0  Tweets are called toots, and they can be up to 500 characters long, versus only 280.
+63.0 --> 69.3  You can also follow people you find interesting, and retweet or boost toots that you like.
+69.3 --> 71.1  So how is it different then?
+71.1 --> 74.9  For starters, Mastodon isn't controlled by one company.
+74.9 --> 81.0  It's an open project, and everyone can grab a copy of the code and set up their own Mastodon server,
+81.0 --> 83.6  also referred to as an instance.
+83.6 --> 90.7  What's more, the owner of an instance is often a member of the community, and they define the rules for their server.
+90.7 --> 97.0  If those are in conflict with what you want to post, you simply find another server to register your account.
+97.0 --> 101.0  This is a choice you don't have with traditional social networks.
+101.0 --> 106.3  And the best part is that each Mastodon server can communicate with the others.
+106.3 --> 112.2  Meaning if you sign up for one instance, you'll still be able to interact with the users on another one.
+112.2 --> 118.1  This model for decentralization is called Federated, and it can be best compared to email.
+118.1 --> 123.1  You see, there are many email providers out there, like Gmail, Outlook, and Yahoo Mail.
+123.1 --> 129.3  I can sign up for Gmail while you can sign up for Outlook, and yet we're able to send each other emails.
+129.3 --> 132.3  That's because email servers speak the same language.
+132.3 --> 135.6  They all use a standard protocol to communicate.
+135.6 --> 138.0  The same is true for Mastodon servers.
+138.0 --> 141.2  They communicate with each other using ActivityPub.
+141.2 --> 147.9  It's a standard protocol that defines how a server should handle new user posts and how they can be interacted with,
+147.9 --> 151.1  like sharing, replying, or liking posts.
+151.1 --> 154.2  But ActivityPub is not limited to Mastodon.
+154.2 --> 158.8  Other applications can also implement it, and that's where the magic happens.
+158.8 --> 161.1  Let me give you a concrete example.
+161.1 --> 166.2  PeerTube, a website similar to YouTube, which also implements ActivityPub.
+166.2 --> 171.1  And because of that, Mastodon users can follow a PeerTube user.
+171.1 --> 176.3  If that user posts a new video, it will pop up on the feed of the Mastodon user.
+176.3 --> 178.1  I mean, how cool is that?
+178.1 --> 184.6  Any platform or application that implements ActivityPub becomes a part of a massive social network.
+184.6 --> 193.7  Imagine being able to use your Facebook account to follow your friends on other platforms like Twitter and YouTube without needing an account there.
+193.7 --> 200.0  This big social network is also called the FETIVERSE, and it already has a ton of services.
+200.0 --> 203.5  For micro-blogging, you can use Mastodon or Frendica.
+203.5 --> 207.0  For video-hosting, there is PeerTube and Fungwale.
+207.0 --> 213.5  For image-hosting, you can use PixelFed, and for regular blogging, you can use Plume or Write As.
+213.6 --> 216.9  You could even say that the FETIVERSE prevents lock-in.
+216.9 --> 223.3  One of the reasons why Facebook has gotten so big is because people have to join it before they can participate.
+223.3 --> 226.9  And once you're in, Facebook tries to keep you in.
+226.9 --> 233.0  They intentionally make their platforms closed, but in the FETIVERSE, the opposite is happening.
+233.0 --> 237.0  More platforms are being built on top of the ActivityPub protocol,
+237.0 --> 241.7  because that means that they can see and interact with all of the content out there.
+241.7 --> 243.1  Sounds great, right?
+243.1 --> 246.4  I was so convinced that I decided to sign up for Mastodon,
+246.4 --> 252.9  and straight away, I sent out a toot asking people what I should cover when making a video about Mastodon.
+252.9 --> 258.3  A few short minutes later, without any followers, I received useful replies.
+258.3 --> 260.9  And I don't mean that sarcastically.
+260.9 --> 267.5  People were keen to point out that Mastodon doesn't do ads, and that it has more advanced features compared to Twitter.
+267.5 --> 270.9  There is, for instance, a nifty spoiler alert system.
+270.9 --> 275.0  One user even asked if my final video would be uploaded to PeerTube,
+275.0 --> 282.7  and another one pointed out that it's not just Mastodon, and that I should also mention the entire FETIVERSE, which I did do.
+282.7 --> 286.8  Alright, by now you're probably thinking, stop your sales talk already.
+286.8 --> 288.8  Nothing can be this good.
+288.8 --> 291.0  And yes, there are some drawbacks.
+291.0 --> 292.8  For starters, money.
+292.8 --> 299.3  Running a Mastodon or any other instance comes with the cost of running servers and maintaining them.
+299.3 --> 304.3  To recover that, most instance owners depend on donations from their users.
+304.3 --> 306.6  Selling ads is not possible.
+306.6 --> 311.7  So before ActivityPub can really take off, we might have to look into this problem.
+311.7 --> 314.9  Otherwise, we could see a lot of instances being born,
+314.9 --> 319.0  but a lot of them might also die quickly because of a lack of funding.
+319.0 --> 322.3  The second possible downside is adoption.
+322.3 --> 326.6  The FETIVERSE is, in my opinion, a revolutionary idea.
+326.6 --> 330.1  One that could interconnect many social services together,
+330.1 --> 333.3  but it's all worth nothing if it's not being used.
+333.3 --> 337.9  Over the years there have been quite a few attempts at decentralizing social media,
+337.9 --> 343.5  with projects like GNU Social or Diaspora, all of which had limited success.
+343.5 --> 348.6  They weren't built on the ActivityPub protocol, and that might have limited their success.
+348.6 --> 352.6  One thing is for sure though, Mastodon is picking up steam.
+352.6 --> 357.2  Fun side fact, it's actually very popular amongst Japanese people.
+357.2 --> 360.4  Cultural differences make them feel unwelcome on Twitter,
+360.4 --> 366.3  and so many Mastodon instances are created by Japanese people for Japanese people.
+366.3 --> 367.3  Really cool.
+367.3 --> 368.8  But back on topic.
+368.8 --> 373.5  Currently there are over 6,500 Mastodon instances worldwide,
+373.5 --> 376.3  who serve a total of 2 million users.
+376.3 --> 379.8  That's nothing compared to giants like Twitter and Facebook,
+379.8 --> 383.5  but it does indicate that there is an interest for something else.
+383.5 --> 386.8  Something better and more community driven.
+386.8 --> 388.7  So that was it for this video.
+388.7 --> 393.0  Would you consider signing up for Mastodon or another platform on the FETIVERSE?
+393.0 --> 397.4  Let me know your thoughts in the comments below and follow me on Mastodon.
+397.4 --> 401.7  If you liked this video, hit the thumbs up button and consider getting subscribed.
+401.7 --> 404.5  Thank you so much for watching, until next time.

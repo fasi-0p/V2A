@@ -1,0 +1,117 @@
+0.0 --> 5.9  In June 2020, I went outside in the middle of the night to spot a train of Starlink satellites.
+5.9 --> 10.9  They're designed to offer internet access anywhere on earth. And that made me wonder,
+10.9 --> 14.8  how does satellite internet work and why isn't it more common?
+15.7 --> 20.2  Let's start with the basics. Traditionally, your home is connected to your internet service
+20.2 --> 26.7  provider via a phone line, coaxial cable or fiber connection. Your ISP in turn is then connected to
+26.7 --> 32.4  the broader internet, which is what allows you to watch this video. Now for satellite internet,
+32.4 --> 37.6  the cable at your end is being replaced by a wireless connection to a satellite in orbit
+37.6 --> 42.9  around earth. But this satellite isn't connected to the internet, so it has to beam the signal
+42.9 --> 48.2  back down to a ground station, which is. And that brings us to the most obvious downside of
+48.2 --> 55.2  satellite internet. Delay or latency. Most communication satellites are orbiting in geostationary
+55.2 --> 62.2  orbits at an altitude of over 35,000 kilometers. And that massive distance delays each internet
+62.2 --> 67.8  request by 4 to 600 milliseconds. The signal needs to travel from you all the way up to the
+67.8 --> 73.5  satellite down to the ground station and then all the way back to you again. Now you think this
+73.5 --> 78.6  wouldn't be much of a problem because these signals travel at the speed of light. But if you divide
+78.6 --> 85.3  the distance between you and the satellite by the speed of light, you get 116 milliseconds.
+85.3 --> 92.3  And this distance has to be traveled at least four times. But all in all, satellite internet is fine
+92.3 --> 98.0  for browsing the web, but anything that requires real time interaction like gaming or video conferencing
+98.0 --> 104.3  will be painful. Now in terms of speed, it depends on where you are located. Via SAT for instance,
+104.4 --> 111.0  promises 12 megabits per second in most areas, with some getting up to 100. Not too bad, except
+111.0 --> 117.0  that they limit your monthly usage to somewhere between 12 and 150 gigabytes. And that means you
+117.0 --> 122.6  can blow through the limit of the cheapest plan by downloading at max speed for just two hours and
+122.6 --> 129.2  13 minutes. So how does SpaceX plan to tackle these issues with Starlink? Well for starters,
+129.2 --> 136.6  they want to launch 12,000 satellites into low earth orbit at an altitude of about 550 kilometers.
+137.3 --> 142.0  That is 60 times closer than traditional communication satellites and reduces the
+142.0 --> 149.2  latency to just 25 to 35 milliseconds. Not as fast as fiber connections, but comparable to our current
+149.2 --> 154.3  cable networks. One side effect of this close proximity is that the satellites don't stay in
+154.3 --> 159.4  one place, they constantly circle around earth, which has implications for the antenna that you
+159.4 --> 165.6  will need to use Starlink. But more on that later. As far as speed goes, we don't really know yet
+165.6 --> 171.4  what SpaceX will offer, but the US Air Force Research Laboratory has already tested Starlink
+171.4 --> 179.0  aboard an aircraft and they achieved 610 megabits per second. Not bad for an in-flight test. And in
+179.0 --> 185.0  fact, this is six times faster than my current connection at home. To put this in perspective,
+185.0 --> 191.1  this kind of speed would allow you to download a modern game of say 50 gigabytes in just 11 minutes.
+191.8 --> 198.3  My current connection, which is no slouch, needs an additional hour. SpaceX's COO said that you'll
+198.3 --> 203.4  be far happier with Starlink than with your current service and she promised more bandwidth for the
+203.5 --> 209.4  same price or cheaper prices for the same amount of bandwidth. Now let's move on to hardware.
+209.4 --> 215.0  Launching 12,000 satellites seems like a big challenge and to cope with that, Starlink satellites
+215.0 --> 222.0  are small, light and cheap. They weigh just 260 kilograms and are launched in batches of 60 on
+222.0 --> 228.9  top of a reused Falcon 9 rocket. Do they really need that many satellites? Well, SpaceX only needs
+229.0 --> 235.8  24 launches to have global coverage, so that's 1,440 satellites. Every additional
+235.8 --> 240.9  satellite improves the coverage and increases the capacity. Now at the time of making this video,
+240.9 --> 246.5  they already completed 10 launches, so they're making good progress. But by far the coolest
+246.5 --> 252.4  piece of hardware on Starlink satellites are the lasers. As said before, the satellites are connected
+252.4 --> 258.7  to the internet via ground stations, but they're also connected to each other with lasers, forming
+258.7 --> 265.3  a giant mesh network. And that comes in handy for long-distance communications. Here's a map
+265.3 --> 270.2  of undersea fiber cables that connect various countries to each other. Now imagine you're in
+270.2 --> 275.4  South Africa and you want to interact with a service in California. Your request has to go
+275.4 --> 280.5  through a series of fiber cables that largely follow the coast of continents. This isn't the
+280.5 --> 285.9  shortest path and on top of that, the fiber cables go through a series of repeaters and routers,
+286.0 --> 291.6  all adding more delays. Now with Starlink, your request can be beamed up to the nearest satellite,
+291.6 --> 296.7  which can then use its lasers to forward it to other satellites that are closer to a ground
+296.7 --> 303.2  station near California. It's a nice trick to reduce latency, but it also increases resiliency.
+303.2 --> 308.2  If a satellite cannot reach a ground station because it's offline, it can simply relay the
+308.2 --> 314.7  traffic to satellites further away that can access a ground station. Other hardware on board are small
+314.7 --> 319.7  ion thrusters and these are used to boost the orbits of satellites, maneuver in space,
+319.7 --> 325.1  and deorbit at the end of their lifetime. But why would you need to boost your satellite,
+325.1 --> 331.1  or why deorbit? Well, this is done to prevent creating more space debris, often referred to as
+331.1 --> 336.9  space junk. NASA is currently tracking over half a million pieces of debris in orbit around Earth.
+337.4 --> 343.0  They vary in size, going from small pieces of paint all the way up to dead and uncontrollable
+343.0 --> 350.2  satellites. But the problem is that they travel at speeds of up to 28,000 km per hour, almost 10
+350.2 --> 356.5  times faster than a bullet. At these speeds, even tiny pieces of paint can cause severe damage to
+356.5 --> 362.6  other satellites in orbit. A damaged satellite can then break apart, make more debris, and cause even
+362.6 --> 369.1  more collisions. This endless cascade is known as Kessler syndrome, and if it happens, it will make
+369.1 --> 376.2  space activities really hard or even impossible, severely impacting us. It means no more satellites
+376.2 --> 381.9  for GPS, weather predictions, TV broadcasts, and no more international space station.
+381.9 --> 387.4  Now, SpaceX is doing a lot of work to prevent this. The reason why Starlink satellites are so close
+387.4 --> 393.9  to Earth is not only to reduce latency, but also because at these altitudes, the satellites experience
+393.9 --> 399.4  atmospheric drag. If they don't periodically boost themselves up, they would burn up in the
+399.4 --> 405.2  atmosphere after a couple of years, essentially cleaning up after themselves. So this way,
+405.2 --> 411.6  SpaceX doesn't have to worry about an unresponsive satellite, it'll just come back down on its own.
+411.6 --> 416.3  That is much better than leaving the satellites in orbit regardless of whether they're still
+416.3 --> 421.5  operational, something that is actually fairly common. Since the beginning of spaceflight,
+421.6 --> 427.5  humanity has launched about 9000 satellites. 5,000 of those are still in orbit today,
+427.5 --> 435.4  but only 1,900 of them are operational. The rest is dead, unused, or uncontrollable. They are space
+435.4 --> 441.0  debris. Now Starlink satellites also have an autonomous collision avoidance system that uses
+441.0 --> 446.4  data from the Department of Defense to automatically move out of the way of approaching debris.
+447.0 --> 449.8  No human required, the system handles it all.
+450.7 --> 455.7  Now let's move on to customers. Who is Starlink intended for anyway? I mean,
+455.7 --> 460.8  most people in western countries have decent internet connections, right? Well, I was shocked
+460.8 --> 467.8  to find an FCC report that said that 21 million Americans, or 6% of the population, don't have
+467.8 --> 473.8  broadband internet connection. Another study put that number at 42 million and Microsoft suggested
+473.8 --> 480.8  that 157 million Americans don't have internet that qualifies as broadband. And that's in a
+480.8 --> 486.3  country that we consider well developed. Now if we zoom out and look at the rest of the world,
+486.3 --> 493.4  things become even worse. UNESCO estimates that only 55% of households have an internet connection.
+493.4 --> 498.5  That's due to bad coverage or expensive service. In Sub-Saharan Africa, for instance,
+498.5 --> 503.9  a single gigabyte of data costs nearly 40% of the average monthly wage.
+504.6 --> 509.8  So that is who Starlink is intended for. Clearly, there is a market for low-cost,
+509.8 --> 515.3  high-speed internet access anywhere on earth. And that market could become really big.
+515.3 --> 520.5  Morgan Stanley estimated that the market for satellite internet will be worth over 400 billion
+520.5 --> 527.8  dollars by 2040. So what do these future customers need to use Starlink? Well, based on leaks,
+527.8 --> 533.2  you'll need a relatively small satellite dish outside your house. It's similar to regular
+533.2 --> 539.3  satellite dishes, but has a much sleeker design. Using it is very simple. You plug it in and you
+539.3 --> 544.8  point it at the sky. That's quite different from, say, TV dishes, which have to be pointed at a
+544.8 --> 551.5  specific place in the sky. And that's because TV broadcast satellites are in geostationary orbits.
+551.5 --> 557.7  They follow the Earth's rotation and are always in the same spot in the sky. Starlink satellites
+557.7 --> 564.2  aren't. They constantly float around. So to fix that, the Starlink terminal has two features.
+564.2 --> 568.9  First, it has built-in motors that can automatically adjust the angle of the dish.
+569.5 --> 574.4  Once in position, it uses a phased array antenna to electronically steer the signal
+574.4 --> 579.7  towards a Starlink satellite. It can do this without physically moving the device,
+579.7 --> 583.4  and it can switch from satellite to satellite as they pass over you.
+584.0 --> 589.0  Now, that brings us to the last part of this video. Why has nobody attempted to do this before?
+589.7 --> 594.6  Well, mainly because it's very expensive to design satellites and to launch them into space.
+595.4 --> 603.4  A launch on top of the Ariane 5 or Atlas 5 rockets costs over $165 million. That's quite a lot in
+603.4 --> 611.2  comparison to SpaceX's Falcon 9, which only costs $62 million or less than $30 million if you choose
+611.2 --> 618.1  a Falcon 9 that has flown before. This gives SpaceX a big advantage. Every time they launch a Falcon
+618.1 --> 624.2  9 for a customer, they can make a profit, and they get to keep the landed rocket. So essentially,
+624.2 --> 629.1  each SpaceX customer brings in more money that can be invested in Starlink.
+629.1 --> 633.2  But aside from SpaceX, there is also Amazon and OneWeb who are giving this a shot.
+633.9 --> 640.3  Amazon's plan are called Project Kuiper and include over 3,000 satellites also in low Earth orbit.
+640.4 --> 645.5  But currently, they haven't launched any yet and it's unclear who will launch them.
+645.5 --> 652.0  OneWeb, meanwhile, has plans to launch 650 satellites and so far managed to launch 34.
+652.6 --> 658.2  In 2020, however, the company faced financial issues and was saved by the UK government,
+658.2 --> 664.0  which took a 55% stake in it. But again, of all these three companies,
+664.0 --> 669.0  only SpaceX can launch their own satellites. But Amazon might follow in the future when
+669.0 --> 674.4  Blue Origin gets up and running. Now, personally, I can't wait to see what SpaceX will do with
+674.4 --> 679.1  Starlink and how the market of satellite internet will evolve. Let me know your thoughts in the
+679.1 --> 684.5  comments below and consider subscribing to the channel if you haven't already. Thanks for watching,
+684.5 --> 685.8  until next time!

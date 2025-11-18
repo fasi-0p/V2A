@@ -1,0 +1,79 @@
+0.0 --> 7.0  We all hear about ERC20 tokens, but what are those tokens and most importantly, what are they not?
+7.0 --> 10.0  To start with, let's quickly go over some of the basics.
+10.0 --> 18.0  ERC20 tokens exist on the Ethereum platform and that in itself consists out of a blockchain that is capable of storing transactions
+18.0 --> 22.0  and a virtual machine that is capable of running smart contracts.
+22.0 --> 26.0  It's important to understand that tokens live on the Ethereum blockchain.
+26.0 --> 33.0  They benefit from its technology, they aren't independent and they rely on Ethereum's blockchain and platform.
+33.0 --> 40.0  The native currency on the Ethereum network is Ether, but besides Ether it can also support other tokens
+40.0 --> 44.0  and these can work like currencies but they can also represent shares of a company,
+44.0 --> 47.0  loyalty points, gold certificates and so on.
+47.0 --> 52.0  But we're running ahead a bit. Let's first take a look at how tokens come into existence.
+52.0 --> 55.0  A token can be created by a smart contract.
+55.0 --> 61.0  This contract is not only responsible for creating tokens, but also for managing transactions of the token
+61.0 --> 64.0  and for keeping track of the balance of each token holder.
+64.0 --> 72.0  To get some tokens you have to send some Ether to the smart contract, which will then give you a certain amount of tokens in return.
+72.0 --> 76.0  So when you want to create your own token, you write a smart contract that can create tokens,
+76.0 --> 79.0  transfer them and keep track of people's balances.
+79.0 --> 83.0  That sounds pretty easy, but it's also quite risky.
+83.0 --> 90.0  For starters, once a smart contract is deployed it cannot be changed anymore, so if you made an error you cannot fix it.
+90.0 --> 92.0  And that could be quite catastrophic.
+92.0 --> 97.0  Imagine a bug inside your contract's code that causes people to lose their tokens
+97.0 --> 100.0  or a bug that would allow others to steal tokens.
+100.0 --> 103.0  And then there is a problem of interoperability.
+103.0 --> 107.0  Each token contract can be completely different from the other.
+107.0 --> 112.0  So if you want your token to be available in an exchange, the exchange has to write custom code
+112.0 --> 116.0  so they can talk to your contract and allow people to trade.
+116.0 --> 118.0  The same thing goes for wallet providers.
+118.0 --> 123.0  Supporting hundreds of tokens would be very complex and very time consuming.
+123.0 --> 127.0  So instead, the community proposed a standard called ERC20.
+127.0 --> 130.0  ERC stands for Ethereum Request for Comments,
+130.0 --> 136.0  and 20 is just a number they assign to a proposal that would create some structure in the Wild West of tokens.
+136.0 --> 142.0  ERC20 is a guideline or a standard for when you want to create your own token.
+142.0 --> 148.0  It defines six mandatory functions that your smart contract should implement and three optional ones.
+148.0 --> 152.0  To start with, you can optionally give your token a name, a symbol,
+152.0 --> 159.0  and you can control how divinable your token is by specifying how many decimals it should support.
+159.0 --> 162.0  The mandatory functions are a bit more complex.
+162.0 --> 167.0  For starters, you have to create a method that defines the total supply of your token.
+167.0 --> 171.0  When this limit is reached, the smart contract will refuse to create new tokens.
+171.0 --> 177.0  Next up is the balance off method, which has to return how many tokens a given address has.
+177.0 --> 179.0  And then there are two transfer methods.
+179.0 --> 184.0  Transfer, which takes a certain amount of tokens from the total supply and gives them to a user,
+184.0 --> 190.0  and transfer from, which can be used to transfer tokens between any two users who have them.
+190.0 --> 194.0  Finally, there is the approve and allowance method.
+194.0 --> 198.0  Approve verifies that your contract can give a certain amount of tokens to a user,
+198.0 --> 201.0  taken into account the total supply.
+201.0 --> 204.0  And the allowance method is almost the exact same,
+204.0 --> 209.0  except that it checks if one user has enough balance to send a certain amount of tokens to someone else.
+209.0 --> 215.0  If you know something about object-oriented programming, you can compare ERC20 to an interface.
+215.0 --> 220.0  If you want your token to be an ERC20 token, you have to implement the ERC20 interface,
+220.0 --> 223.0  and that forces you to implement the six methods.
+223.0 --> 229.0  Now, before there was the ERC20 standard, everyone who wanted to create a token had to reinvent the wheel.
+229.0 --> 232.0  And that meant that each token contract was slightly different,
+232.0 --> 237.0  and that exchanges and wallets had to write custom code to support your token.
+237.0 --> 243.0  With ERC20, however, exchanges and wallet providers only have to implement this code once.
+243.0 --> 246.0  And that's why exchanges can add new tokens so quickly,
+246.0 --> 253.0  and why wallets like myEtherWallet has support for all ERC20 tokens without having to be updated.
+253.0 --> 256.0  So how easy is it to create your own token?
+256.0 --> 259.0  Well, there's a website called Token Factory that does it all for you.
+259.0 --> 263.0  You just enter what the total supply of your token should be, how you want to call it,
+263.0 --> 267.0  how many decimals it should support, and what symbol it should have.
+267.0 --> 273.0  After entering all this, the website creates a token contract for you and adds it to the Ethereum blockchain.
+273.0 --> 276.0  It is super easy and almost effortless.
+276.0 --> 283.0  So effortless, in fact, that the website Etherscan has a list of 36,000 known ERC20 tokens,
+283.0 --> 290.0  and it's estimated that in 2017, over $4 billion was raised by selling tokens in an ICO.
+290.0 --> 293.0  However, these tokens were not always clean.
+293.0 --> 300.0  Some were really overhyped, and many people got scammed into purchasing tokens that were essentially worthless.
+300.0 --> 302.0  But now we're getting a bit distracted.
+302.0 --> 306.0  ERC20 is a great standard that has propelled the use of tokens.
+306.0 --> 309.0  But ERC20 itself is not perfect.
+309.0 --> 314.0  It's only a guideline, and people are free to implement the required functions however they like.
+314.0 --> 317.0  And that has led to some interesting problems.
+317.0 --> 322.0  For instance, to buy some tokens, you have to send some Ether to the token contract.
+322.0 --> 326.0  But some people tried sending other ERC20 tokens instead.
+326.0 --> 331.0  If the contract was not designed with this in mind, it will result in your tokens being lost.
+331.0 --> 339.0  In fact, it was estimated that by December 2017, well over $3 million have been lost because of this flaw.
+339.0 --> 346.0  So to solve this, the community is already working on extending the ERC20 standard with the ERC223 standard.
+346.0 --> 351.0  This warns token creators about these risks and offers some work arounds.
+351.0 --> 354.0  That was it for this video. I hope you find it interesting.
+354.0 --> 359.0  Let me know what you think about ERC20 tokens in the comments below or send a tweet to adsfg.
+359.0 --> 364.0  Thank you very much for watching, and don't forget to subscribe so I can see you in the next video.
